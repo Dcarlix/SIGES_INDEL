@@ -1,0 +1,66 @@
+﻿@model SIGES_INDEL.Models.Matriculas
+@{
+    SIGES_INDEL.Models.Estudiante estudiante = ViewBag.estudiante as SIGES_INDEL.Models.Estudiante ?? new SIGES_INDEL.Models.Estudiante();
+    List<SIGES_INDEL.Models.Complementos.Estado> xestados = ViewBag.estado as List<SIGES_INDEL.Models.Complementos.Estado>;
+    List<SIGES_INDEL.Models.Complementos.Grados> xgrados= ViewBag.grado as List<SIGES_INDEL.Models.Complementos.Grados>;
+}
+@{
+    ViewData["Title"] = "Matricular Alumno";
+}
+<form asp-action="Crear">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Matricula al Alumno </h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h3 class="text-center mb-4 fw-bold">Matriculacion de @estudiante.NombreCompleto</h3>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="EstudianteId" class="control-label"></label>
+                                <input type="hidden" asp-for="EstudianteId" value="@estudiante.Id" />
+                                <input type="number" value="@estudiante.NIE" class="form-control" readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaMatricula" class="control-label"></label>
+                                <input asp-for="FechaMatricula" type="date" class="form-control"/>
+                                <span asp-validation-for="FechaMatricula" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="EstadoId" class="control-label"></label>
+                                <select asp-for="EstadoId" class="form-control">
+                                    <option selected value="">Selecciona Estado</option>
+                                    @foreach (var item in xestados)
+                                    {
+                                            <option value="@item.Id">@item.Estados</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="EstadoId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="GradoId" class="control-label"></label>
+                                <select asp-for="GradoId" class="form-control">
+                                    <option selected value="">Selecciona Grado</option>
+                                    @foreach (var item in xgrados)
+                                    {
+                                        <option value="@item.Id">@item.Abreviacion</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="GradoId" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">Matricular Estudiante</button>
+            <a class="btn btn-secondary me-2" asp-controller="Matriculas" asp-action="Index">Cancelar</a>
+        </div>
+    </div>
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

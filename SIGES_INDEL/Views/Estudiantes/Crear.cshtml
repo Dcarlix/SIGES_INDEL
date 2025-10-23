@@ -1,0 +1,181 @@
+﻿@model SIGES_INDEL.Models.Estudiante
+@{
+    List<SIGES_INDEL.Models.Complementos.Nacionalidades> xnacionalidades = ViewBag.nacionalidades as List<SIGES_INDEL.Models.Complementos.Nacionalidades>;
+
+    List<SIGES_INDEL.Models.Complementos.EstadoCivil> xestadosCiviles = ViewBag.estadoCivil as List<SIGES_INDEL.Models.Complementos.EstadoCivil>;
+
+    List<SIGES_INDEL.Models.Complementos.Etnia> xetnia = ViewBag.etnias as List<SIGES_INDEL.Models.Complementos.Etnia>;
+
+    List<SIGES_INDEL.Models.Complementos.Parentesco> xparentescos = ViewBag.parentescos as List<SIGES_INDEL.Models.Complementos.Parentesco>;
+}
+@{
+    ViewData["Title"] = "Matricular Alumnos";
+}
+<form asp-action="Crear" enctype="multipart/form-data">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Matricula a un Alumno</h3>
+        <small class="text-center">Campos con * son opcionales</small>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h3 class="text-center mb-4 fw-bold">Datos Personales</h3>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <label asp-for="ImagenEstudianteArchivo" class="control-label"></label>
+                        <input asp-for="ImagenEstudianteArchivo" type="file" class="form-control" accept="image/*" onchange="mostrarPreview(event)" />
+                        <img id="previewImagen" src="~/images/default-avatar.png"
+                             alt="Previsualización"
+                             class="img-thumbnail m-2"
+                             style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="NIE" class="control-label"></label>
+                                <input asp-for="NIE" type="number" class="form-control" placeholder="Digite el NIE" />
+                                <span asp-validation-for="NIE" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="NombreCompleto" class="control-label"></label>
+                                <input asp-for="NombreCompleto" class="form-control" placeholder="Escriba el nombre completo" />
+                                <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaNacimiento" class="control-label"></label>
+                                <input asp-for="FechaNacimiento" type="date" class="form-control" placeholder="Fecha de Nacimiento" />
+                                <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Edad" class="control-label"></label>
+                                <input asp-for="Edad" type="number" class="form-control" placeholder="Digite edad"/>
+                                <span asp-validation-for="Edad" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <label asp-for="Direccion" class="control-label"></label>
+                                <input asp-for="Direccion" class="form-control" placeholder="Direccion Completa" />
+                                <span asp-validation-for="Direccion" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Discapacidades" class="control-label"></label>
+                                <input asp-for="Discapacidades" class="form-control" placeholder="Discapacidades" />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="EstadoCivilId" class="control-label"></label>
+                                <select asp-for="EstadoCivilId" class="form-control">
+                                    <option selected value="">Selecciona Estado Civil</option>
+                                    @foreach (var item in xestadosCiviles)
+                                    {
+                                        <option value="@item.Id">@item.Estado</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="EstadoCivilId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="NacionalidadId" class="control-label"></label>
+                                <select asp-for="NacionalidadId" class="form-control">
+                                    <option selected value="">Nacionalidad</option>
+                                    @foreach (var item in xnacionalidades)
+                                    {
+                                        <option value="@item.Id">@item.Nacionalidad</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="NacionalidadId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="EtniaId" class="control-label"></label>
+                                <select asp-for="EtniaId" class="form-control">
+                                    <option selected value="">Etnia</option>
+                                    @foreach (var item in xetnia)
+                                    {
+                                        <option value="@item.Id">@item.Etnias</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="EtniaId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Telefono" class="control-label"></label>
+                                <input asp-for="Telefono" type="number" class="form-control" placeholder="Telefono Celular" />
+                                <span asp-validation-for="Telefono" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Trabajo" class="control-label"></label>
+                                <input asp-for="Trabajo" class="form-control" placeholder="Trabaja el Estudiante?" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h5 class="card-title mb-3 fw-semibold">Representante</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label asp-for="NombreCompletoRepresentante" class="control-label"></label>
+                        <input asp-for="NombreCompletoRepresentante" class="form-control" placeholder="Nombre del Representante" />
+                        <span asp-validation-for="NombreCompletoRepresentante" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="DUI" class="control-label"></label>
+                        <input asp-for="DUI" type="number" class="form-control" placeholder="DUI Del representante" />
+                        <span asp-validation-for="DUI" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="TelefonoRepresentante" class="control-label"></label>
+                        <input asp-for="TelefonoRepresentante" type="number" class="form-control" placeholder="Telefono Del representante" />
+                        <span asp-validation-for="TelefonoRepresentante" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="ParentescoId" class="control-label"></label>
+                        <select asp-for="ParentescoId" class="form-control">
+                            <option selected value="">Parentesco</option>
+                            @foreach (var item in xparentescos)
+                            {
+                                <option value="@item.Id">@item.Parentescos</option>
+                            }
+                        </select>
+                        <span asp-validation-for="ParentescoId" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="TelefonoTrabajoRepresentante" class="control-label"></label>
+                        <input asp-for="TelefonoTrabajoRepresentante" type="number" class="form-control" placeholder="Telefono de trabajo Del representante" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">Agregar Estudiante</button>
+            <a class="btn btn-secondary me-2" asp-controller="Home" asp-action="Index">Cancelar</a>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Función que muestra la previsualización al seleccionar una imagen
+        function mostrarPreview(event) {
+            const input = event.target;
+            const file = input.files[0];
+            const preview = document.getElementById('previewImagen');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                // Si el usuario quita la imagen, mostramos un avatar por defecto
+                preview.src = '/images/default-avatar.png';
+            }
+        }
+    </script>
+}

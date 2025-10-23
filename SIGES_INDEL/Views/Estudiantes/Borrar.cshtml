@@ -1,0 +1,178 @@
+﻿@model SIGES_INDEL.Models.Estudiante
+@{
+    List<SIGES_INDEL.Models.Complementos.Nacionalidades> xnacionalidades = ViewBag.nacionalidades as List<SIGES_INDEL.Models.Complementos.Nacionalidades>;
+
+    List<SIGES_INDEL.Models.Complementos.EstadoCivil> xestadosCiviles = ViewBag.estadoCivil as List<SIGES_INDEL.Models.Complementos.EstadoCivil>;
+
+    List<SIGES_INDEL.Models.Complementos.Etnia> xetnia = ViewBag.etnias as List<SIGES_INDEL.Models.Complementos.Etnia>;
+
+    List<SIGES_INDEL.Models.Complementos.Parentesco> xparentescos = ViewBag.parentescos as List<SIGES_INDEL.Models.Complementos.Parentesco>;
+}
+@{
+    ViewData["Title"] = "Borrar Alumnos";
+}
+<form asp-action="Borrar" enctype="multipart/form-data" onsubmit="confirmarEliminacion(event)">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Borrar el alumno @Model.NombreCompleto</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h3 class="text-center mb-4 fw-bold">Datos Personales</h3>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <label asp-for="ImagenEstudianteArchivo" class="control-label"></label>
+                        @if (Model.ImagenEstudiante != null)
+                        {
+                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImagenEstudiante)"
+                                 alt="Imagen de @Model.NombreCompleto"
+                                 class="img-thumbnail m-2"
+                                 style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                        }
+                        else
+                        {
+                            <img src="~/images/default-avatar.png"
+                                 alt="Previsualización"
+                                 class="img-thumbnail m-2"
+                                 style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                        }
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="NIE" class="control-label"></label>
+                                <input asp-for="NIE" type="number" class="form-control" placeholder="Digite el NIE" readonly disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="NombreCompleto" class="control-label"></label>
+                                <input asp-for="NombreCompleto" class="form-control" placeholder="Escriba el nombre completo" readonly disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaNacimiento" class="control-label"></label>
+                                <input asp-for="FechaNacimiento" type="date" class="form-control" placeholder="Fecha de Nacimiento" readonly disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Edad" class="control-label"></label>
+                                <input asp-for="Edad" type="number" class="form-control" placeholder="Digite edad" readonly disabled />
+                            </div>
+                            <div class="col-md-12">
+                                <label asp-for="Direccion" class="control-label"></label>
+                                <input asp-for="Direccion" class="form-control" placeholder="Direccion Completa" readonly disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Discapacidades" class="control-label"></label>
+                                <input asp-for="Discapacidades" class="form-control" placeholder="Discapacidades" readonly disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="EstadoCivilId" class="control-label"></label>
+                                <select asp-for="EstadoCivilId" class="form-control" disabled>
+                                    <option selected value="">Selecciona Estado Civil</option>
+                                    @foreach (var item in xestadosCiviles)
+                                    {
+                                        <option value="@item.Id">@item.Estado</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="NacionalidadId" class="control-label"></label>
+                                <select asp-for="NacionalidadId" class="form-control" disabled>
+                                    <option selected value="">Nacionalidad</option>
+                                    @foreach (var item in xnacionalidades)
+                                    {
+                                        <option value="@item.Id">@item.Nacionalidad</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="EtniaId" class="control-label"></label>
+                                <select asp-for="EtniaId" class="form-control" disabled>
+                                    <option selected value="">Etnia</option>
+                                    @foreach (var item in xetnia)
+                                    {
+                                        <option value="@item.Id">@item.Etnias</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Telefono" class="control-label"></label>
+                                <input asp-for="Telefono" type="number" class="form-control" placeholder="Telefono Celular" readonly disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Trabajo" class="control-label"></label>
+                                <input asp-for="Trabajo" class="form-control" placeholder="Trabaja el Estudiante?" readonly disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h5 class="card-title mb-3 fw-semibold">Representante</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label asp-for="NombreCompletoRepresentante" class="control-label"></label>
+                        <input asp-for="NombreCompletoRepresentante" class="form-control" placeholder="Nombre del Representante" readonly disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="DUI" class="control-label"></label>
+                        <input asp-for="DUI" type="number" class="form-control" placeholder="DUI Del representante" readonly disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="TelefonoRepresentante" class="control-label"></label>
+                        <input asp-for="TelefonoRepresentante" type="number" class="form-control" placeholder="Telefono Del representante" readonly disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="ParentescoId" class="control-label"></label>
+                        <select asp-for="ParentescoId" class="form-control" disabled>
+                            <option selected value="">Parentesco</option>
+                            @foreach (var item in xparentescos)
+                            {
+                                <option value="@item.Id">@item.Parentescos</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="TelefonoTrabajoRepresentante" class="control-label"></label>
+                        <input asp-for="TelefonoTrabajoRepresentante" type="number" class="form-control" placeholder="Telefono de trabajo Del representante" readonly disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a class="btn btn-secondary me-2" asp-controller="Estudiantes" asp-action="Index">Regresar</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+             function confirmarEliminacion(event) {
+            event.preventDefault(); // Evita el envío automático del formulario
+
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "Esta acción no se puede deshacer.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Sí, eliminar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Envía el formulario manualmente
+                    event.target.closest('form').submit();               
+                }
+            });
+
+             }    
+               
+    </script>
+}
+

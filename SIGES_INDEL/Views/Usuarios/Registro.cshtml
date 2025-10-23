@@ -1,0 +1,53 @@
+﻿@model SIGES_INDEL.Models.RegistroViewModel
+@{
+    ViewData["Title"] = "Regitro";
+}
+
+<div class="card">
+    <div class="card-header bg-primary border-primary">
+        <div class="card-title">
+            <h3 class="text-light">Regístrate</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <form asp-action="Registro" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ConfirmPassword" class="form-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="DocenteId" class="form-label"></label>
+                <select asp-for="DocenteId" class="form-select"
+                        asp-items="@(new SelectList((IEnumerable<SIGES_INDEL.Models.Docente>)ViewData["Docentes"], "NIP", "NombreCompleto"))">
+                    <option value="">-- Selecciona un docente --</option>
+                </select>
+                <span asp-validation-for="DocenteId" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Registrarme</button>
+                <a class="btn btn-success" asp-action="Login">Ya tengo cuenta</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
