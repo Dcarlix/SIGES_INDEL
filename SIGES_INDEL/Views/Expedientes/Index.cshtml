@@ -1,0 +1,130 @@
+﻿@model SIGES_INDEL.Models.Estudiante
+
+@{
+    ViewData["Title"] = "Expediente del Estudiante";
+}
+
+<h1 class="text-center mb-4">Expediente de @Model.NombreCompleto</h1>
+
+<div class="card mb-2 shadow border-2 border-primary rounded-3">
+    <div class="card-body">
+        <h4 class="text-info text-center">Datos Generales</h4>
+        <div class="row text-center">
+            <p class="col"><strong>NIE:</strong> @Model.NIE</p>
+            <p class="col"><strong>Edad:</strong> @Model.Edad años</p>
+            <p class="col"><strong>Teléfono:</strong> @Model.Telefono</p>
+        </div>
+        <div class="row text-center">
+            <p class="col"><strong>Representante:</strong> @Model.NombreCompletoRepresentante</p>
+            <p class="col"><strong>DUI Representante:</strong> @Model.DUI</p>
+            <p class="col"><strong>Teléfono Del Representante:</strong> @Model.TelefonoRepresentante</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card shadow border-2 border-success">
+            <div class="card-header bg-success text-white">Méritos</div>
+            <div class="card-body">
+                @if (Model.MeritosAsignados?.Any() == true)
+                {
+                    <ul class="list-group">
+                        @foreach (var merito in Model.MeritosAsignados)
+                        {
+                            <li class="list-group-item">
+                                <strong>@merito.Comentarios</strong>
+                                <br />
+                                <small>Asignado por: @merito.Docente?.NombreCompleto</small>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p class="text-muted">No se han registrado méritos.</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card shadow border-2 border-danger">
+            <div class="card-header bg-danger text-white">Deméritos</div>
+            <div class="card-body">
+                @if (Model.DemeritosAsignados?.Any() == true)
+                {
+                    <ul class="list-group">
+                        @foreach (var demerito in Model.DemeritosAsignados)
+                        {
+                            <li class="list-group-item">
+                                <strong>@demerito.Comentarios</strong>
+                                <br />
+                                <small>Asignado por: @demerito.Docente?.NombreCompleto</small>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p class="text-muted">No se han registrado deméritos.</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card shadow border-2 border-warning">
+            <div class="card-header bg-warning">Fichas</div>
+            <div class="card-body">
+                @if (Model.FichasAsignadas?.Any() == true)
+                {
+                    <ul class="list-group">
+                        @foreach (var ficha in Model.FichasAsignadas)
+                        {
+                            <li class="list-group-item">
+                                <strong>@ficha.Comentarios</strong>
+                                <br />
+                                <small>Asignada por: @ficha.Docente?.NombreCompleto</small>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p class="text-muted">No se han registrado fichas.</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card shadow border-2 border-info">
+            <div class="card-header bg-info text-white">Actas</div>
+            <div class="card-body">
+                @if (Model.ActasAsignadas?.Any() == true)
+                {
+                    <ul class="list-group">
+                        @foreach (var acta in Model.ActasAsignadas)
+                        {
+                            <li class="list-group-item">
+                                <strong>@acta.Comentarios</strong>
+                                <br />
+                                <small>Emitida por: @acta.Docente?.NombreCompleto</small>
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p class="text-muted">No se han registrado actas.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a asp-controller="Estudiantes" asp-action="Index" class="btn btn-secondary">Volver a Estudiantes</a>
+</div>
+

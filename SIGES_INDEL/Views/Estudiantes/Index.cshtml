@@ -5,15 +5,17 @@
 
 <h1 class="text-center">Lista de Estudiantes</h1>
 <div class="row my-3">
-    <div class="col-auto">
+    <div class="col">
         <form asp-action="Index" method="get">
             <div class="form-actions no-color">
-                <div class="container">
-                    <div class="row">
-                        <div class="col"><label for="Buscar">Buscar segun NIE</label></div>
-                        <div class="col"> <input type="number" name="Buscar" value="@ViewData["Buscar"]" placeholder="Buscar Estudiante segun NIE" class="form-control" /></div>
-                        <div class="col"><input type="submit" value="Buscar" class="btn btn-success mx-2" /></div>
-                        <div class="col"> <a asp-action="Index" class="btn btn-secondary d-inline"><i class="bi bi-person-lines-fill"></i></a></div>
+                <div class="card shadow my-3 bg-light border-2 border-info rounded-3 p-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3 fs-4"><label for="Buscar">Buscar segun NIE</label></div>
+                            <div class="col-3"><input type="number" name="Buscar" value="@ViewData["Buscar"]" class="form-control" /></div>
+                            <div class="col-3"><input type="submit" value="Buscar" class="btn btn-success" /></div>
+                            <div class="col-3"><a asp-action="Index" class="btn btn-secondary">Lista completa <i class="bi bi-person-lines-fill"></i></a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,7 +35,7 @@
                     </div>
 
                     <div class="card-body">
-                        <h5 class="card-title text-center text-info fw-bold mb-4">Expediente</h5>
+                        <h5 class="card-title text-center text-info fw-bold mb-4">Informacion</h5>
                         <div class="row align-items-center">
                             <div class="col">
                                 <div class="mb-3">
@@ -57,13 +59,13 @@
                                         <label class="form-label fw-semibold">Grado</label>
                                         <div class="form-control">
                                             @{
-                                                var ultimaMatricula = estudiante.Matriculas
+                                                var gradoActual = estudiante.Matriculas
                                                 .OrderByDescending(m => m.FechaMatricula)
                                                 .FirstOrDefault();
                                             }
-                                            @if (ultimaMatricula != null)
+                                            @if (gradoActual != null)
                                             {
-                                                @ultimaMatricula.Grados.Abreviacion
+                                                @gradoActual.Grados.Abreviacion
                                             }
                                             else
                                             {
@@ -73,7 +75,22 @@
                                     </div>
                                     <div class="col">
                                         <label class="form-label fw-semibold">Coordinador</label>
-                                        <input type="text" class="form-control" value="Arcides Canales" readonly>
+                                        <div class="form-control">
+                                            @{
+                                                var coordinadorActual = estudiante.Matriculas
+                                                .OrderByDescending(m => m.FechaMatricula)
+                                                .FirstOrDefault();
+                                            }
+
+                                            @if (coordinadorActual?.Grados?.Docente != null)
+                                            {
+                                                @coordinadorActual.Grados.Docente.NombreCompleto
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted">Sin Coordinador</span>
+                                            } 
+                                        </div>
                                     </div>
                                 </div>
 
@@ -81,6 +98,7 @@
                                     <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@estudiante.Id">Detalles</a>
                                     <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@estudiante.Id">Modificar</a>
                                     <a class="btn btn-danger" asp-action="Borrar" asp-route-id="@estudiante.Id">Borrar</a>
+                                    <a class="btn btn-success" asp-controller="Expedientes" asp-action="Index" asp-route-id="@estudiante.Id">Expediente</a>
                                 </div>
                             </div>
                         </div>

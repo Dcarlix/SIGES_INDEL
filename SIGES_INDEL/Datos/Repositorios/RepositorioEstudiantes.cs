@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SIGES_INDEL.Datos.Interfaces;
 using SIGES_INDEL.Models;
 using System.Collections;
@@ -31,7 +32,8 @@ namespace SIGES_INDEL.Datos.Repositorios
 			return estudiante = await ContextoDatos.TEstudiantes
 								.Include(e => e.Matriculas)
 									.ThenInclude(m => m.Grados)
-								.Include(m => m.Matriculas)
+										.ThenInclude(g => g.Docente)
+								.Include(e => e.Matriculas)
 									.ThenInclude(m => m.Estado)
 								.FirstOrDefaultAsync(e => e.Id == id);
 		}
@@ -45,10 +47,11 @@ namespace SIGES_INDEL.Datos.Repositorios
 		public async Task<IEnumerable> Index(int busqueda)
 		{
 			var _estudiantes = ContextoDatos.TEstudiantes
-			   .Include(e => e.Matriculas)
-				   .ThenInclude(m => m.Grados)
-			   .OrderBy(e => e.NombreCompleto)
-			   .AsQueryable();
+										.Include(e => e.Matriculas)
+											.ThenInclude(m => m.Grados)
+												.ThenInclude(g => g.Docente)  
+										.OrderBy(e => e.NombreCompleto)
+										.AsQueryable();
 
 			if (busqueda != 0)
 			{

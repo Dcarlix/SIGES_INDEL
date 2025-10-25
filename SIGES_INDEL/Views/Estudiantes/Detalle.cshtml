@@ -156,9 +156,22 @@
                     }
                     @if (ultimaMatricula != null)
                     {
-                        <p><strong>Grado Actual:</strong> @ultimaMatricula.Grados?.Abreviacion</p>
-                        <p><strong>Fecha de Matrícula:</strong> @ultimaMatricula.FechaMatricula</p>
-                        <p><strong>Fecha de Matrícula:</strong> @ultimaMatricula.Estado.Estados</p>
+                        <div class="col-md-6">
+                            <label class="control-label">Grado Actual:</label>
+                            <input class="form-control" value="@ultimaMatricula.Grados?.Abreviacion" readonly disabled />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Año de Matricula:</label>
+                            <input class="form-control" value="@ultimaMatricula.FechaMatricula.Year" readonly disabled />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Estado del estudiante:</label>
+                            <input class="form-control" value="@ultimaMatricula.Estado.Estados" readonly disabled />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Coordinador:</label>
+                            <input class="form-control" value="@ultimaMatricula.Grados.Docente.NombreCompleto" readonly disabled />
+                        </div>
                     }
                     else
                     {

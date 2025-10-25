@@ -143,6 +143,40 @@
             </div>
         </div>
 
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h5 class="card-title mb-3 fw-semibold">Datos de Matricula</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    @{
+                        var ultimaMatricula = Model.Matriculas?
+                        .OrderByDescending(m => m.FechaMatricula)
+                        .FirstOrDefault();
+                    }
+                    @if (ultimaMatricula != null)
+                    {
+                        <div class="col-md-6">
+                            <label class="control-label">Grado Actual:</label>
+                            <input class="form-control" value="@ultimaMatricula.Grados?.Abreviacion" readonly disabled />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Año de Matricula:</label>
+                            <input class="form-control" value="@ultimaMatricula.FechaMatricula.Year" readonly disabled />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Estado del estudiante:</label>
+                            <input class="form-control" value="@ultimaMatricula.Estado.Estados" readonly disabled />
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">El estudiante aún no tiene matrícula registrada.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
         <div class="text-end">
             <button type="submit" class="btn btn-danger">Eliminar</button>
             <a class="btn btn-secondary me-2" asp-controller="Estudiantes" asp-action="Index">Regresar</a>
@@ -152,27 +186,27 @@
 
 @section Scripts {
     <script>
-             function confirmarEliminacion(event) {
-            event.preventDefault(); // Evita el envío automático del formulario
+         function confirmarEliminacion(event) {
+        event.preventDefault(); // Evita el envío automático del formulario
 
-            Swal.fire({
-                title: '¿Estás seguro?',
-                text: "Esta acción no se puede deshacer.",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#d33',
-                cancelButtonColor: '#3085d6',
-                confirmButtonText: 'Sí, eliminar',
-                cancelButtonText: 'Cancelar'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    // Envía el formulario manualmente
-                    event.target.closest('form').submit();               
-                }
-            });
+        Swal.fire({
+            title: '¿Estás seguro?',
+            text: "Esta acción no se puede deshacer.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Sí, eliminar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Envía el formulario manualmente
+                event.target.closest('form').submit();
+            }
+        });
 
-             }    
-               
+         }
+
     </script>
 }
 

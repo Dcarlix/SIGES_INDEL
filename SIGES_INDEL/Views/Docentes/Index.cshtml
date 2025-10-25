@@ -3,17 +3,19 @@
     ViewData["Title"] = "Listado de Docentes";
 }
 
-<h1 class="text-center">Lista de Estudiantes</h1>
+<h1 class="text-center">Lista de Docentes</h1>
 <div class="row my-3">
-    <div class="col-auto">
+    <div class="col">
         <form asp-action="Index" method="get">
             <div class="form-actions no-color">
-                <div class="container">
-                    <div class="row">
-                        <div class="col"><label for="Buscar">Buscar segun NIP</label></div>
-                        <div class="col"> <input type="number" name="Buscar" value="@ViewData["Buscar"]" class="form-control" /></div>
-                        <div class="col"><input type="submit" value="Buscar" class="btn btn-success mx-2" /></div>
-                        <div class="col"> <a asp-action="Index" class="btn btn-secondary d-inline"><i class="bi bi-person-lines-fill"></i></a></div>
+                <div class="card shadow my-3 bg-light border-2 border-info rounded-3 p-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3 fs-4"><label for="Buscar">Buscar segun NIP</label></div>
+                            <div class="col-3"><input type="number" name="Buscar" value="@ViewData["Buscar"]" class="form-control"/></div>
+                            <div class="col-3"><input type="submit" value="Buscar" class="btn btn-success" /></div>
+                            <div class="col-3"><a asp-action="Index" class="btn btn-secondary">Lista completa <i class="bi bi-person-lines-fill"></i></a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,25 +28,41 @@
     {
         @foreach (var docente in Model)
         {
-            <div class="card shadow p-4 mb-4 bg-light border-2 border-info rounded-3" style="max-width: 900px; margin: auto;">
-                <div class="card-body">
-                    <div class="row g-4 align-items-start">
-                        <!-- Imagen -->
-                        <div class="col-md-3 d-flex justify-content-center align-self-stretch">
-                            <div class="border border-info rounded text-center p-3 w-100 h-100 d-flex align-items-center justify-content-center fw-bold" style="min-height: 180px;">
-                            </div>
+            <div class="col-4 text-center">
+                <div class="card shadow my-3 bg-light border-2 border-info rounded-3">
+                    <div class="card-header bg-info">
+                        <div class="card-title">
+                            <p class="fw-bold fs-5">NIP - @Html.DisplayFor(t => docente.NIP)</p>
                         </div>
-
-                        <div class="col-md-9">
-                            <div class="mb-4">
-                                <p class="fw-semibold fs-5 mb-3">NIP: @Html.DisplayFor(t=> docente.NIP)</p>
-                                <p class="fw-semibold fs-5 mb-3">NOMBRE: @Html.DisplayFor(t => docente.NombreCompleto)</p>
-                                <p class="fw-semibold fs-5 mb-4">GRADO COORDINACION:@Html.DisplayFor(t => docente.Grados.Abreviacion)</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                @if (docente.ImagenDocente != null)
+                                {
+                                    <img id="previewImagen" src="data:image/jpeg;base64,@Convert.ToBase64String(docente.ImagenDocente)"
+                                         alt="Imagen de @docente.NombreCompleto"
+                                         class="img-thumbnail m-2"
+                                         style="max-width: 200px; height: 250px; object-fit: cover; border-radius: 10px;" />
+                                }
+                                else
+                                {
+                                    <img id="previewImagen" src="~/images/default-avatar.png"
+                                         alt="Previsualización"
+                                         class="img-thumbnail m-2"
+                                         style="max-width: 200px; height: 250px; object-fit: cover; border-radius: 10px;" />
+                                }
                             </div>
+                            <div class="col">
+                                <div class="my-4 text-start">
+                                    <p class="fw-semibold fs-5">Nombre: @Html.DisplayFor(t => docente.NombreCompleto)</p>
+                                    <p class="fw-semibold fs-5">Grado que coordina: @Html.DisplayFor(t => docente.Grados.Abreviacion)</p>
+                                </div>
 
-                            <div class="d-flex justify-content-start gap-3">
-                                <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@docente.Id">Detalles</a>
-                                <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@docente.Id">Modificar</a>
+                                <div class="d-flex justify-content-start gap-3">
+                                    <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@docente.Id">Detalles</a>
+                                    <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@docente.Id">Modificar</a>
+                                </div>
                             </div>
                         </div>
                     </div>

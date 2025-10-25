@@ -8,10 +8,10 @@
 <form asp-action="Crear" enctype="multipart/form-data">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Agregar un Docente</h3>
-        <div class="card shadow p-4 mb-4 bg-light border-2 border-info rounded-3" style="max-width: 900px; margin: auto;">
+        <div class="card shadow mb-4 bg-light border-2 border-info rounded-3">
             <div class="card-body">
-                <div class="row g-4 align-items-start">
-                    <div class="col-md-3 d-flex justify-content-center align-self-stretch">
+                <div class="row">
+                    <div class="col-3">
                         <label asp-for="ImagenDocenteArchivo" class="control-label"></label>
                         <input asp-for="ImagenDocenteArchivo" type="file" class="form-control" accept="image/*" onchange="mostrarPreview(event)" />
                         <img id="previewImagen" src="~/images/default-avatar.png"
@@ -20,7 +20,7 @@
                              style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
                     </div>
 
-                    <div class="col-md-9">
+                    <div class="col-9">
                         <div class="mb-4">
                             <label asp-for="NombreCompleto" class="control-label"></label>
                             <input asp-for="NombreCompleto" class="form-control" placeholder="Nombre completo" />
@@ -36,7 +36,7 @@
                             <div class="col-md-6">
                                 <label asp-for="GradosId" class="control-label"></label>
                                 <select asp-for="GradosId" class="form-control">
-                                    <option selected value="">Selecciona Grado que coordinara</option>
+                                    <option selected value="">Selecciona Grado que coordinará</option>
                                     @foreach (var item in xgrados)
                                     {
                                         <option value="@item.Id">@item.Abreviacion</option>

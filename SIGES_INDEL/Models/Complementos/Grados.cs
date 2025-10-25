@@ -24,5 +24,7 @@ namespace SIGES_INDEL.Models.Complementos
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
 		public string Abreviacion { get; set; }
 
+		public Docente Docente { get; set; }
+
 	}
 }

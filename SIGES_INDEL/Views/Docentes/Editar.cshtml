@@ -8,10 +8,10 @@
 <form asp-action="Editar" enctype="multipart/form-data">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Modifar Datos de Docente</h3>
-        <div class="card shadow p-4 mb-4 bg-light border-2 border-info rounded-3" style="max-width: 900px; margin: auto;">
+        <div class="card shadow mb-4 bg-light border-2 border-info rounded-3">
             <div class="card-body">
-                <div class="row g-4 align-items-start">
-                    <div class="col-md-3 d-flex justify-content-center align-self-stretch">
+                <div class="row">
+                    <div class="col-3">
                         <label asp-for="ImagenDocenteArchivo" class="control-label"></label>
                         <input asp-for="ImagenDocenteArchivo" type="file" class="form-control" accept="image/*" onchange="mostrarPreview(event)" />
                         @if (Model.ImagenDocente != null)
@@ -30,7 +30,7 @@
                         }
                     </div>
 
-                    <div class="col-md-9">
+                    <div class="col-9">
                         <div class="mb-4">
                             <label asp-for="NombreCompleto" class="control-label"></label>
                             <input asp-for="NombreCompleto" class="form-control" placeholder="Nombre completo" />

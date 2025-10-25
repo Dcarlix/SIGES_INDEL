@@ -26,6 +26,8 @@ opciones.UseSqlServer(builder.Configuration.GetConnectionString("Cnn")));
 builder.Services.AddScoped<IRepositorioEstudiantes, RepositorioEstudiantes>();
 builder.Services.AddScoped<IRepositorioUtilidades, RepositorioUtilidades>();
 builder.Services.AddScoped<IRepositorioMatriculas, RepositorioMatriculas>();
+builder.Services.AddScoped<IRepositorioDocentes, RepositorioDocentes>();
+builder.Services.AddScoped<IRepositorioExpedientes, RepositorioExpedientes>();
 
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(opciones =>

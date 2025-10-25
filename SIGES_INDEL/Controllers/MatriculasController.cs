@@ -16,11 +16,11 @@ namespace SIGES_INDEL.Controllers
 			_IrepositorioUtilidades = repositorioUtilidades;
 		}
 		[HttpGet]
-		public async Task<IActionResult> Index(int busqueda)
+		public async Task<IActionResult> Index(int Buscar)
         {
-			ViewData["Buscar"] = busqueda;
+			ViewData["Buscar"] = Buscar;
 
-			return View(await _Irepositorio.Index(busqueda));
+			return View(await _Irepositorio.Index(Buscar));
 		}
 
 		[HttpGet]

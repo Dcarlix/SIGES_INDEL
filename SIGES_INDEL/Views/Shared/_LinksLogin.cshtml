@@ -5,18 +5,16 @@
 
     @if (SinInManager.IsSignedIn(User))
     {
-
         <li>
             <div>
                 <form asp-action="Logout" asp-controller="Usuarios">
                     <div class="text-center">
                         <span class="mx-4 fw-bold">@User.Identity.Name</span>
-                        <button type="submit" class="btn btn-secondary text-dark"><i class="bi bi-door-open"></i></button>
+                        <button type="submit" class="btn btn-primary text-dark"><i class="bi bi-door-open"></i></button>
                     </div>
                 </form>
             </div>
         </li>
-
     }
     else
     {
