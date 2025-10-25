@@ -38,8 +38,10 @@ namespace SIGES_INDEL.Controllers
 		{
 			if (ModelState.IsValid)
 			{
+				matriculas.Id = 0;
+
 				await _Irepositorio.Crear(matriculas);
-				TempData["mensaje"] = "Estudiante creado correctamente.";
+				TempData["mensaje"] = "Estudiante matriculado correctamente.";
 				TempData["tipo"] = "success";
 				return RedirectToAction(nameof(Index));
 			}
@@ -54,15 +56,16 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Editar(int id)
 		{
-			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(id);
-			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
-
 			var matricula = await _Irepositorio.Buscar(id);
 			if (matricula == null)
 			{
 				return NotFound();
 			}
+
+			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matricula.EstudianteId);
+			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+
 			return View(matricula);
 		}
 		[HttpPost]
@@ -71,14 +74,13 @@ namespace SIGES_INDEL.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				
 				await _Irepositorio.Actualizar(matriculas);
 				TempData["mensaje"] = "Cambios guardados con éxito.";
 				TempData["tipo"] = "success";
 				return RedirectToAction(nameof(Index));
 			}
 
-			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matriculas.Id);
+			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matriculas.EstudianteId);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
 			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
 
@@ -88,15 +90,15 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Detalle(int id)
 		{
-			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(id);
-			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
-			
 			var matriculas = await _Irepositorio.Buscar(id);
 			if (matriculas == null)
 			{
 				return NotFound();
 			}
+			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matriculas.EstudianteId);
+			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			
 			return View(matriculas);
 		}
 
@@ -104,15 +106,15 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Borrar(int id)
 		{
-			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(id);
-			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
-
 			var matricula = await _Irepositorio.Buscar(id);
 			if (matricula == null)
 			{
 				return NotFound();
 			}
+			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matricula.EstudianteId);
+			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+
 			return View(matricula);
 		}
 		[HttpPost, ActionName("Borrar")]
@@ -125,7 +127,7 @@ namespace SIGES_INDEL.Controllers
 			}
 
 			await _Irepositorio.Borrar(matriculas);
-			TempData["mensaje"] = "Estudiante eliminado correctamente.";
+			TempData["mensaje"] = "Matricula Eliminada correctamente.";
 			TempData["tipo"] = "warning";
 			return RedirectToAction(nameof(Index));
 		}

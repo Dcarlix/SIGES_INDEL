@@ -24,10 +24,6 @@ namespace SIGES_INDEL.Models
 		[NotMapped]
 		public IFormFile ImagenDocenteArchivo { get; set; }
 
-		[Display(Name = "Fecha de Nacimiento")]
-		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		public DateOnly FechaNacimiento { get; set; }
-
 		//Relacion con tabla Grado Coordinacion
 		[Display(Name = "Grado que Coordina")]
 		public int GradosId { get; set; }

@@ -3,69 +3,75 @@
     ViewData["Title"] = "Listado de Matriculas";
 }
 
-<h1 class="text-center">Matriculas</h1>
+<h1 class="text-center">Lista de Matriculas</h1>
 <div class="row my-3">
     <div class="col-auto">
         <form asp-action="Index" method="get">
             <div class="form-actions no-color">
-                <span class="d-flex align-items-baseline">
-                    <label for="Buscar" class="form-label">Buscar Matricula segun NIE de estudiante</label>
-                    <input type="number" name="Buscar" value="@ViewData["Buscar"]" class="form-control" />
-                    <input type="submit" value="Buscar" class="btn btn-success mx-2" />
-                    <a asp-action="Index" class="btn btn-secondary d-inline"><i class="bi bi-person-lines-fill"></i></a>
-                </span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><label for="Buscar">Buscar segun NIE</label></div>
+                        <div class="col"> <input type="number" name="Buscar" value="@ViewData["Buscar"]" placeholder="Buscar Estudiante segun NIE" class="form-control" /></div>
+                        <div class="col"><input type="submit" value="Buscar" class="btn btn-success mx-2" /></div>
+                        <div class="col"> <a asp-action="Index" class="btn btn-secondary d-inline"><i class="bi bi-person-lines-fill"></i></a></div>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
-        <div class="card border">
-            <div class="card-header">
-                <h3><strong>Lista de Matriculas</strong></h3>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    @if (Model.Count() > 0)
-                    {
-                        <table class="table table-bordered" id="tblMatriculas">
-                            <thead>
-                                <tr>
-                                    <th>@Html.DisplayNameFor(t => t.Id)</th>
-                                    <th>@Html.DisplayNameFor(t => t.FechaMatricula)</th>
-                                    <th>@Html.DisplayNameFor(t => t.EstudianteId)</th>
-                                    <th>@Html.DisplayNameFor(t => t.GradoId)</th>
-                                    <th>@Html.DisplayNameFor(t => t.EstadoId)</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var matricula in Model)
-                                {
-                                    <tr>
-                                        <td>@Html.DisplayFor(t => matricula.Id)</td>
-                                        <td>@Html.DisplayFor(t => matricula.FechaMatricula)</td>
-                                        <td>@Html.DisplayFor(t => matricula.EstudianteId)</td>
-                                        <td>@Html.DisplayFor(t => matricula.GradoId)</td>
-                                        <td>@Html.DisplayFor(t => matricula.EstadoId)</td>
-                                        <td>
-                                            <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@matricula.Id">Detalles</a>
-                                            <a class="btn btn-primary" asp-action="Editar" asp-route-id="@matricula.Id">Modificar</a>
-                                            <a class="btn btn-primary" asp-action="Borrar" asp-route-id="@matricula.Id">Borrar</a>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    }
-                    else
-                    {
-                        <h1>No hay Matriculas</h1>
-                    }
+    @if (Model.Count() > 0)
+    {
+        <div class="col-12">
+            @foreach (var matricula in Model)
+            {
+                <div class="card shadow bg-light border-2 border-primary rounded-3" style="max-width: 900px; margin: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-primary fw-bold">Datos de Matrícula</h5>
+
+                        <div class="row text-center align-items-center">
+                            <div class="col-md">
+                                <label class="form-label fw-semibold">@Html.DisplayNameFor(t => t.Id)</label>
+                                <input type="text" class="form-control text-center" value="@Html.DisplayFor(t => matricula.Id)" readonly>
+                            </div>
+
+                            <div class="col-md">
+                                <label class="form-label fw-semibold">@Html.DisplayNameFor(t => t.EstudianteId)</label>
+                                <input type="text" class="form-control text-center" value="@Html.DisplayFor(t => matricula.Estudiante.NIE)" readonly>
+                            </div>
+
+                            <div class="col-md">
+                                <label class="form-label fw-semibold">@Html.DisplayNameFor(t => t.FechaMatricula)</label>
+                                <input type="text" class="form-control text-center" value="@Html.DisplayFor(t => matricula.FechaMatricula)" readonly>
+                            </div>
+
+                            <div class="col-md">
+                                <label class="form-label fw-semibold">@Html.DisplayNameFor(t => t.GradosId)</label>
+                                <input type="text" class="form-control text-center" value="@Html.DisplayFor(t => matricula.Grados.Abreviacion)" readonly>
+                            </div>
+
+                            <div class="col-md">
+                                <label class="form-label fw-semibold">@Html.DisplayNameFor(t => t.EstadoId)</label>
+                                <input type="text" class="form-control text-center text-success fw-bold" value="@Html.DisplayFor(t => matricula.Estado.Estados)" readonly>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3 mt-2">
+                            <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@matricula.Id">Detalles</a>
+                            <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@matricula.Id">Modificar</a>
+                            <a class="btn btn-danger" asp-action="Borrar" asp-route-id="@matricula.Id">Borrar</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
-    </div>
+    }
+    else
+    {
+        <h1>No hay Matriculas</h1>
+    }
+
 </div>
 
 

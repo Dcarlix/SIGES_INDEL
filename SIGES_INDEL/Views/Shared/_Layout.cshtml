@@ -26,19 +26,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Estudiantes" asp-action="Index">Estudiantes</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Docentes" asp-action="Index">Docentes</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acciones</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" asp-area="" asp-controller="Estudiantes" asp-action="Crear">Agregar Estudiante</a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Docentes" asp-action="Index">Meritos</a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Docentes" asp-action="Index">Actas</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Estudiantes" asp-action="Crear">Agregar y Matricular Estudiante</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Matriculas" asp-action="Index">Ver Matriculas</a>
                             </div>
                         </li>
                     </ul>
+                    <partial name="_LinksLogin" />
                 </div>
             </div>
         </nav>

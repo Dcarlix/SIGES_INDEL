@@ -33,7 +33,7 @@
             <div class="mb-3">
                 <label asp-for="DocenteId" class="form-label"></label>
                 <select asp-for="DocenteId" class="form-select"
-                        asp-items="@(new SelectList((IEnumerable<SIGES_INDEL.Models.Docente>)ViewData["Docentes"], "NIP", "NombreCompleto"))">
+                        asp-items="@(new SelectList((IEnumerable<SIGES_INDEL.Models.Docente>)ViewData["Docentes"], "Id", "NombreCompleto"))">
                     <option value="">-- Selecciona un docente --</option>
                 </select>
                 <span asp-validation-for="DocenteId" class="text-danger"></span>

@@ -39,15 +39,15 @@
                                 <span asp-validation-for="EstadoId" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
-                                <label asp-for="GradoId" class="control-label"></label>
-                                <select asp-for="GradoId" class="form-control">
+                                <label asp-for="GradosId" class="control-label"></label>
+                                <select asp-for="GradosId" class="form-control">
                                     <option selected value="">Selecciona Grado</option>
                                     @foreach (var item in xgrados)
                                     {
                                         <option value="@item.Id">@item.Abreviacion</option>
                                     }
                                 </select>
-                                <span asp-validation-for="GradoId" class="text-danger"></span>
+                                <span asp-validation-for="GradosId" class="text-danger"></span>
                             </div>
                         </div>
                     </div>

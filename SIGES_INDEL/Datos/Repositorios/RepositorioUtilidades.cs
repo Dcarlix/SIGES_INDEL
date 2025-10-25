@@ -58,9 +58,10 @@ namespace SIGES_INDEL.Datos.Repositorios
 			return await ContextoDatos.TDocentes.ToListAsync();
 		}
 
-		public async Task<Estudiante> ListarEstudiantes(int estudianteId)
+		public async Task<Estudiante> ListarEstudiantes(int id)
 		{
-			return await ContextoDatos.TEstudiantes.FindAsync(estudianteId);
+			return await ContextoDatos.TEstudiantes.FindAsync(id);
 		}
+		
 	}
 }

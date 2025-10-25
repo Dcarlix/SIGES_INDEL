@@ -13,16 +13,21 @@ namespace SIGES_INDEL.Datos.Repositorios
 		{
 			ContextoDatos = applicationDbContext;
 		}
-		public async Task<IEnumerable> Index(int busqueda)
+		public async Task<IEnumerable<Matriculas>> Index(int busqueda)
 		{
-			var _matricula = from a in ContextoDatos.TMatriculas select a;
-			_matricula = _matricula.OrderBy(a => a.EstudianteId);
+			var query = ContextoDatos.TMatriculas
+							.Include(t => t.Grados)
+							.Include(t => t.Estado)
+							.Include(t => t.Estudiante)
+							.AsNoTracking()
+							.AsQueryable();
+
 			if (busqueda != 0)
-			{
-				_matricula = _matricula.Where(a => a.EstudianteId == busqueda);
-				return await _matricula.AsNoTracking().ToListAsync();
-			}
-			return await ContextoDatos.TMatriculas.ToListAsync();
+				query = query.Where(a => a.EstudianteId == busqueda);
+
+			return await query
+				.OrderBy(a => a.EstudianteId)
+				.ToListAsync();
 		}
 		public async Task Crear(Matriculas matriculas)
 		{

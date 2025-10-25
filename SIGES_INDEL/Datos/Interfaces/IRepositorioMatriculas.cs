@@ -5,7 +5,7 @@ namespace SIGES_INDEL.Datos.Interfaces
 {
 	public interface IRepositorioMatriculas
 	{
-		public Task<IEnumerable> Index(int busqueda);
+		public Task<IEnumerable<Matriculas>> Index(int busqueda);
 		public Task Crear(Matriculas matriculas);
 		public Task Actualizar(Matriculas matriculas);
 		public Task<Matriculas> Buscar(int? id);

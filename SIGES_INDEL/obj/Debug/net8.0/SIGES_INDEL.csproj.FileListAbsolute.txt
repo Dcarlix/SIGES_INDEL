@@ -150,3 +150,4 @@ C:\Users\MINEDUCYT\Desktop\TerceroSoft\Cafe_2025\SIGES_INDEL\SIGES_INDEL\obj\Deb
 C:\Users\MINEDUCYT\Desktop\TerceroSoft\Cafe_2025\SIGES_INDEL\SIGES_INDEL\obj\Debug\net8.0\SIGES_INDEL.pdb
 C:\Users\MINEDUCYT\Desktop\TerceroSoft\Cafe_2025\SIGES_INDEL\SIGES_INDEL\obj\Debug\net8.0\SIGES_INDEL.genruntimeconfig.cache
 C:\Users\MINEDUCYT\Desktop\TerceroSoft\Cafe_2025\SIGES_INDEL\SIGES_INDEL\obj\Debug\net8.0\ref\SIGES_INDEL.dll
+C:\Users\MINEDUCYT\Desktop\TerceroSoft\Cafe_2025\SIGES_INDEL\SIGES_INDEL\obj\Debug\net8.0\SIGES_INDEL.sourcelink.json

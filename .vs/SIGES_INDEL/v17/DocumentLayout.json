@@ -3,56 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\datos\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\datos\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\docentes\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\docentes\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\estudiantes\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\estudiantes\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\docentes\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\docentes\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\registros\\actasasignadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\registros\\actasasignadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\docentes\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\docentes\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\registros\\demeritosasignados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\registros\\demeritosasignados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\registros\\fichasasignadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\registros\\fichasasignadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\registros\\meritosasignados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\registros\\meritosasignados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\docentes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\docentes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\estudiantes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\estudiantes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\estudiantes\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\estudiantes\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\datos\\repositorios\\repositoriodocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\datos\\repositorios\\repositoriodocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\datos\\repositorios\\repositorioestudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\datos\\repositorios\\repositorioestudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\controllers\\docentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\controllers\\docentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\datos\\interfaces\\irepositorioestudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\datos\\interfaces\\irepositorioestudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\datos\\interfaces\\irepositoriodocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\datos\\interfaces\\irepositoriodocentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Datos\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\ApplicationDbContext.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Datos\\ApplicationDbContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwCwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:32:12.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:31:48.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Docente.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Docente.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Docente.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Docente.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\Docente.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:31:09.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MeritosAsignados.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\MeritosAsignados.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Registros\\MeritosAsignados.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\MeritosAsignados.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\Registros\\MeritosAsignados.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:13:42.469Z",
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Editar.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Estudiantes\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Editar.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Estudiantes\\Editar.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T23:28:03.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FichasAsignadas.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\FichasAsignadas.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Registros\\FichasAsignadas.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\FichasAsignadas.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\Registros\\FichasAsignadas.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAywCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:13:38.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DemeritosAsignados.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\DemeritosAsignados.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Registros\\DemeritosAsignados.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\DemeritosAsignados.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\Registros\\DemeritosAsignados.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:13:36.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ActasAsignadas.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\ActasAsignadas.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Registros\\ActasAsignadas.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Registros\\ActasAsignadas.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\Registros\\ActasAsignadas.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAywBYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T05:13:31.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Detalle.cshtml",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
-              "RelativeToolTip": "SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-23T04:27:08.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Index.cshtml",
               "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Estudiantes\\Index.cshtml",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Index.cshtml",
               "RelativeToolTip": "SIGES_INDEL\\Views\\Estudiantes\\Index.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEMAAACDAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAQwFQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-23T04:23:13.648Z",
+              "WhenOpened": "2025-10-24T22:59:17.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Docentes\\Detalle.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Detalle.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Docentes\\Detalle.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T22:44:20.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Editar.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Docentes\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Editar.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Docentes\\Editar.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T22:44:06.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Crear.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Docentes\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Crear.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Docentes\\Crear.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T22:43:52.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Docentes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Docentes\\Index.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Docentes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T22:43:22.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Estudiante.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Estudiante.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Estudiante.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Estudiante.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Models\\Estudiante.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwHQAAAA5AAAAAAAAAA==",
+              "Title": "DocentesController.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Controllers\\DocentesController.cs",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Controllers\\DocentesController.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Controllers\\DocentesController.cs",
+              "RelativeToolTip": "SIGES_INDEL\\Controllers\\DocentesController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T04:22:44.133Z",
+              "WhenOpened": "2025-10-24T17:26:50.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RepositorioEstudiantes.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Repositorios\\RepositorioEstudiantes.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Datos\\Repositorios\\RepositorioEstudiantes.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Repositorios\\RepositorioEstudiantes.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Datos\\Repositorios\\RepositorioEstudiantes.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwCMAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "RepositorioDocentes.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Repositorios\\RepositorioDocentes.cs",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Datos\\Repositorios\\RepositorioDocentes.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Repositorios\\RepositorioDocentes.cs",
+              "RelativeToolTip": "SIGES_INDEL\\Datos\\Repositorios\\RepositorioDocentes.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T04:22:22.898Z",
+              "WhenOpened": "2025-10-24T17:05:03.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IRepositorioEstudiantes.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Interfaces\\IRepositorioEstudiantes.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Datos\\Interfaces\\IRepositorioEstudiantes.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Interfaces\\IRepositorioEstudiantes.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Datos\\Interfaces\\IRepositorioEstudiantes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IRepositorioDocentes.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Interfaces\\IRepositorioDocentes.cs",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Datos\\Interfaces\\IRepositorioDocentes.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Datos\\Interfaces\\IRepositorioDocentes.cs",
+              "RelativeToolTip": "SIGES_INDEL\\Datos\\Interfaces\\IRepositorioDocentes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T04:22:21.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EstudiantesController.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Controllers\\EstudiantesController.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Controllers\\EstudiantesController.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Controllers\\EstudiantesController.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Controllers\\EstudiantesController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T04:22:18.967Z",
+              "WhenOpened": "2025-10-24T17:02:57.674Z",
               "EditorCaption": ""
             }
           ]

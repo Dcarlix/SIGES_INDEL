@@ -14,6 +14,7 @@ namespace SIGES_INDEL.Datos.Interfaces
 		public Task<IEnumerable> ListarNacionalidades();
 		public Task<IEnumerable> ListarParentesco();
 		public Task<IEnumerable> ListarDocentes();
-		public Task<Estudiante> ListarEstudiantes(int estudianteId);
+		public Task<Estudiante> ListarEstudiantes(int id);
+		
 	}
 }

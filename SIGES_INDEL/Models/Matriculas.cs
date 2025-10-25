@@ -6,7 +6,7 @@ namespace SIGES_INDEL.Models
 	public class Matriculas
 	{
 		[Key]
-		[Display(Name = "Id")]
+		[Display(Name = "Matricula #")]
 		public int Id { get; set; }
 
 		[Display(Name = "Fecha de Matricula")]
@@ -21,7 +21,7 @@ namespace SIGES_INDEL.Models
 
 		//Relacion con tabla Grados
 		[Display(Name = "Grado Actual")]
-		public int GradoId { get; set; }
+		public int GradosId { get; set; }
 		[Display(Name = "Grado Actual")]
 		public Grados Grados { get; set; }
 
