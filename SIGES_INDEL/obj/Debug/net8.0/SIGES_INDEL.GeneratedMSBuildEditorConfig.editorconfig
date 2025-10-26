@@ -36,6 +36,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0YXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DemeritosData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zRGF0YVxCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DemeritosData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zRGF0YVxDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DemeritosData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zRGF0YVxEZXRhbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DemeritosData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zRGF0YVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DemeritosData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zRGF0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Demeritos/Borrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zXEJvcnJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,6 +128,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmljaGFzXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Grados/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9zXEJvcnJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Grados/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9zXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Grados/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9zXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Grados/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9zXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Grados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -134,6 +174,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Matriculas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/MeritosData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyaXRvc0RhdGFcQm9ycmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/MeritosData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyaXRvc0RhdGFcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/MeritosData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyaXRvc0RhdGFcRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/MeritosData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyaXRvc0RhdGFcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/MeritosData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyaXRvc0RhdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Meritos/Borrar.cshtml]

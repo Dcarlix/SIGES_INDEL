@@ -43,7 +43,7 @@ namespace SIGES_INDEL.Datos
 				.HasOne(m => m.Estudiante)
 				.WithMany(e => e.Matriculas)
 				.HasForeignKey(m => m.EstudianteId)
-				.OnDelete(DeleteBehavior.Restrict);
+				.OnDelete(DeleteBehavior.Cascade);
 
 			// Configuración de relación 1 a 1 entre ApplicationUser y Docente
 			builder.Entity<ApplicationUser>()

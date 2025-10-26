@@ -1,0 +1,30 @@
+﻿@model SIGES_INDEL.Models.Complementos.Meritos
+@{
+    ViewData["Title"] = "Informacion Merito";
+}
+<form asp-action="Detalle">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Informacion del Merito</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label asp-for="Merito" class="control-label"></label>
+                                <input asp-for="Merito" class="form-control" disabled readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <a class="btn btn-secondary me-2" asp-controller="MeritosData" asp-action="Index">Regresar</a>
+        </div>
+    </div>
+</form>
+
+
+
+

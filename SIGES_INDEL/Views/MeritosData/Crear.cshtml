@@ -1,0 +1,32 @@
+﻿@model SIGES_INDEL.Models.Complementos.Meritos
+@{
+    ViewData["Title"] = "Agregar Meritos";
+}
+<form asp-action="Crear">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Agrega un Merito</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label asp-for="Merito" class="control-label"></label>
+                                <input asp-for="Merito" class="form-control" />
+                                <span asp-validation-for="Merito" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">Agregar Merito</button>
+            <a class="btn btn-secondary me-2" asp-controller="MeritosData" asp-action="Index">Cancelar</a>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

@@ -30,7 +30,6 @@ namespace SIGES_INDEL.Controllers
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();
 			ViewBag.parentescos = await _IrepositorioUtilidades.ListarParentesco();
-
 			return View();
 		}
 
@@ -152,14 +151,6 @@ namespace SIGES_INDEL.Controllers
 		public async Task<IActionResult> BorrarCliente(Estudiante estudiante)
 		{
 
-			var confirmacion = await _Irepositorio.Confirmacion(estudiante.Id);
-
-			if (confirmacion.Matriculas.Any())
-			{
-				TempData["tipo"] = "warning";
-				TempData["mensaje"] = "No se puede eliminar este estudiante porque tiene matrículas registradas.";
-				return RedirectToAction(nameof(Index));
-			}
 			if (estudiante == null)
 			{
 				return View();

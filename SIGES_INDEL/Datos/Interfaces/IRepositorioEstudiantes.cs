@@ -16,6 +16,5 @@ namespace SIGES_INDEL.Datos.Interfaces
 		public Task<IEnumerable> ListarDemeritos(int NIE);
 		public Task<IEnumerable> ListarFichas(int NIE);
 		public Task<IEnumerable> ListarMertios(int NIE);
-		public Task<Estudiante> Confirmacion(int id);
 	}
 }

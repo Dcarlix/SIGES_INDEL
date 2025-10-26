@@ -81,11 +81,5 @@ namespace SIGES_INDEL.Datos.Repositorios
 			return await ContextoDatos.TMeritosAsignados.Where(t => t.EstudianteId == NIE).Include(t => t.Estudiante).Include(t => t.Docente).ToListAsync();
 
 		}
-
-		public async Task<Estudiante> Confirmacion(int id)
-		{
-			return estudiante = await ContextoDatos.TEstudiantes.Include(e => e.Matriculas).FirstOrDefaultAsync(e => e.Id == id);
-		}
-
 	}
 }

@@ -1,0 +1,63 @@
+﻿@model SIGES_INDEL.Models.Complementos.Grados
+@{
+    ViewData["Title"] = "Borrar Grado";
+}
+<form asp-action="Borrar" onsubmit="confirmarEliminacion(event)">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Borrar el Grado @Model.Abreviacion</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Grado" class="control-label"></label>
+                                <input asp-for="Grado" class="form-control" disabled readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Anno" class="control-label"></label>
+                                <input asp-for="Anno" class="form-control" disabled readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Seccion" class="control-label"></label>
+                                <input asp-for="Seccion" class="form-control" disabled readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Abreviacion" class="control-label"></label>
+                                <input asp-for="Abreviacion" class="form-control" disabled readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-danger">Eliminar Grado</button>
+            <a class="btn btn-secondary me-2" asp-controller="Grados" asp-action="Index">Regresar</a>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <script>
+        function confirmarEliminacion(event) {
+           event.preventDefault();
+           Swal.fire({
+               title: '¿Estás seguro?',
+               text: "Esta Accion puede Causar muchos Problemas, Asegurate que no hay matriculas con este grado!!!!",
+               icon: 'warning',
+               showCancelButton: true,
+               confirmButtonColor: '#d33',
+               cancelButtonColor: '#3085d6',
+               confirmButtonText: 'Sí, eliminar',
+               cancelButtonText: 'Cancelar'
+           }).then((result) => {
+               if (result.isConfirmed) {
+                   event.target.closest('form').submit();
+               }
+           });
+        }
+    </script>
+}
+
+
+

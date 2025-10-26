@@ -5,8 +5,10 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using SIGES_INDEL.Datos;
 using SIGES_INDEL.Datos.Interfaces;
+using SIGES_INDEL.Datos.Interfaces.InterfacesDatos;
 using SIGES_INDEL.Datos.Interfaces.InterfacesRegistro;
 using SIGES_INDEL.Datos.Repositorios;
+using SIGES_INDEL.Datos.Repositorios.RepositoriosDatos;
 using SIGES_INDEL.Datos.Repositorios.RepositoriosRegistro;
 using SIGES_INDEL.Models;
 
@@ -34,6 +36,9 @@ builder.Services.AddScoped<IRepositorioMeritos, RepositorioMeritos>();
 builder.Services.AddScoped<IRepositorioDemeritos, RepositorioDemeritos>();
 builder.Services.AddScoped<IRepositorioFichas, RepositorioFichas>();
 builder.Services.AddScoped<IRepositorioActas, RepositorioActas>();
+builder.Services.AddScoped<IRepositorioGrados, RepositorioGrados>();
+builder.Services.AddScoped<IRepositorioMeritosData, RepositorioMeritosData>();
+builder.Services.AddScoped<IRepositorioDemeritosData, RepositorioDemeritosData>();
 
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(opciones =>
@@ -56,8 +61,35 @@ builder.Services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.Ex
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication();
 
-
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+	var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+	var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+	string adminRole = "Administrador";
+	if (!await roleManager.RoleExistsAsync(adminRole))
+	{
+		await roleManager.CreateAsync(new IdentityRole(adminRole));
+	}
+	string adminEmail = "admin@correo.com";
+	string adminPassword = "Admin123*";
+	var adminUser = await userManager.FindByEmailAsync(adminEmail);
+	if (adminUser == null)
+	{
+		adminUser = new ApplicationUser
+		{
+			UserName = adminEmail,
+			Email = adminEmail,
+			EmailConfirmed = true
+		};
+		var result = await userManager.CreateAsync(adminUser, adminPassword);
+		if (result.Succeeded)
+		{
+			await userManager.AddToRoleAsync(adminUser, adminRole);
+		}
+	}
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

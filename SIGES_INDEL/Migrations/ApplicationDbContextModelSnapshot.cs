@@ -765,7 +765,7 @@ namespace SIGES_INDEL.Migrations
                     b.HasOne("SIGES_INDEL.Models.Estudiante", "Estudiante")
                         .WithMany("Matriculas")
                         .HasForeignKey("EstudianteId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Complementos.Grados", "Grados")
