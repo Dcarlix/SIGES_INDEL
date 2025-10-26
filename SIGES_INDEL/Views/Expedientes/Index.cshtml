@@ -97,16 +97,16 @@
                             @foreach (var demerito in Model.DemeritosAsignados)
                             {
                                 <div class="card shadow border-2 border-danger">
-                                    <div class="card-header bg-success text-white">Deméritos</div>
+                                    <div class="card-header bg-danger text-white">Deméritos</div>
                                     <div class="card-body">
                                         <p>@demerito.Demeritos.Demerito</p>
                                         <p><strong>@demerito.Comentarios</strong></p>
                                         <p>
                                             <small>Asignado por: @demerito.Docente?.NombreCompleto</small>
                                             <div class="d-flex justify-content-start gap-3">
-                                                <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@demerito.Id"><i class="bi bi-info-circle"></i></a>
-                                                <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@demerito.Id"><i class="bi bi-pencil"></i></a>
-                                                <a class="btn btn-danger" asp-action="Borrar" asp-route-id="@demerito.Id"><i class="bi bi-trash"></i></a>
+                                                <a class="btn btn-primary" asp-controller="Demeritos" asp-action="Detalle" asp-route-id="@demerito.Id"><i class="bi bi-info-circle"></i></a>
+                                                <a class="btn btn-secondary" asp-controller="Demeritos" asp-action="Editar" asp-route-id="@demerito.Id"><i class="bi bi-pencil"></i></a>
+                                                <a class="btn btn-danger" asp-controller="Demeritos" asp-action="Borrar" asp-route-id="@demerito.Id"><i class="bi bi-trash"></i></a>
                                             </div>
                                     </div>
                                 </div>
@@ -114,7 +114,8 @@
                         }
                         else
                         {
-                            <p class="fs-bold">No se han registrado deméritos.</p>
+                            <p class="fs-bold"><strong>No se han registrado Demeritos.</strong></p>
+
                         }
                     </div>
                 </div>
@@ -130,29 +131,32 @@
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row">
-                    <div class="col-md-4 mb-4 text-center">
-                        <div class="card shadow border-2 border-warning">
-                            <div class="card-header bg-warning">Fichas</div>
-                            <div class="card-body">
-                                @if (Model.FichasAsignadas?.Any() == true)
-                                {
-                                    <ul class="list-group">
-                                        @foreach (var ficha in Model.FichasAsignadas)
-                                        {
-                                            <li class="list-group-item">
-                                                <strong>@ficha.Comentarios</strong>
-                                                <br />
-                                                <small>Asignada por: @ficha.Docente?.NombreCompleto</small>
-                                            </li>
-                                        }
-                                    </ul>
-                                }
-                                else
-                                {
-                                    <p class="text-muted">No se han registrado fichas.</p>
-                                }
-                            </div>
-                        </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        @if (Model.ActasAsignadas?.Any() == true)
+                        {
+                            @foreach (var actas in Model.ActasAsignadas)
+                            {
+                                <div class="card shadow border-2 border-warning">
+                                    <div class="card-header bg-warning text-white">Acta</div>
+                                    <div class="card-body">
+                                        <p>@actas.Acta</p>
+                                        <p><strong>@actas.Comentarios</strong></p>
+                                        <p>
+                                            <small>Asignado por: @actas.Docente?.NombreCompleto</small>
+                                            <div class="d-flex justify-content-start gap-3">
+                                                <a class="btn btn-primary" asp-controller="Actas" asp-action="Detalle" asp-route-id="@actas.Id"><i class="bi bi-info-circle"></i></a>
+                                                <a class="btn btn-secondary" asp-controller="Actas" asp-action="Editar" asp-route-id="@actas.Id"><i class="bi bi-pencil"></i></a>
+                                                <a class="btn btn-danger" asp-controller="Actas" asp-action="Borrar" asp-route-id="@actas.Id"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <p class="fs-bold"><strong>No se han registrado Actas.</strong></p>
+
+                        }
                     </div>
                 </div>
             </div>
@@ -167,29 +171,32 @@
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row">
-                    <div class="col-md-4 mb-4 text-center">
-                        <div class="card shadow border-2 border-info">
-                            <div class="card-header bg-info text-white">Actas</div>
-                            <div class="card-body">
-                                @if (Model.ActasAsignadas?.Any() == true)
-                                {
-                                    <ul class="list-group">
-                                        @foreach (var acta in Model.ActasAsignadas)
-                                        {
-                                            <li class="list-group-item">
-                                                <strong>@acta.Comentarios</strong>
-                                                <br />
-                                                <small>Emitida por: @acta.Docente?.NombreCompleto</small>
-                                            </li>
-                                        }
-                                    </ul>
-                                }
-                                else
-                                {
-                                    <p class="text-muted">No se han registrado actas.</p>
-                                }
-                            </div>
-                        </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        @if (Model.FichasAsignadas?.Any() == true)
+                        {
+                            @foreach (var fichas in Model.FichasAsignadas)
+                            {
+                                <div class="card shadow border-2 border-info">
+                                    <div class="card-header bg-info text-white">Ficha</div>
+                                    <div class="card-body">
+                                        <p>@fichas.Ficha</p>
+                                        <p><strong>@fichas.Comentarios</strong></p>
+                                        <p>
+                                            <small>Asignado por: @fichas.Docente?.NombreCompleto</small>
+                                            <div class="d-flex justify-content-start gap-3">
+                                                <a class="btn btn-primary" asp-controller="Fichas" asp-action="Detalle" asp-route-id="@fichas.Id"><i class="bi bi-info-circle"></i></a>
+                                                <a class="btn btn-secondary" asp-controller="Fichas" asp-action="Editar" asp-route-id="@fichas.Id"><i class="bi bi-pencil"></i></a>
+                                                <a class="btn btn-danger" asp-controller="Fichas" asp-action="Borrar" asp-route-id="@fichas.Id"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <p class="fs-bold"><strong>No se han registrado Fichas.</strong></p>
+
+                        }
                     </div>
                 </div>
             </div>
