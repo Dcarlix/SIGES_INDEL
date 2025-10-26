@@ -6,7 +6,7 @@
 
 <h1 class="text-center mb-4">Expediente de @Model.NombreCompleto</h1>
 
-<div class="card mb-2 shadow border-2 border-primary rounded-3">
+<div class="card mb-4 shadow border-2 border-primary rounded-3">
     <div class="card-body">
         <h4 class="text-info text-center">Datos Generales</h4>
         <div class="row text-center">
@@ -22,103 +22,176 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-6 mb-4">
-        <div class="card shadow border-2 border-success">
-            <div class="card-header bg-success text-white">Méritos</div>
-            <div class="card-body">
-                @if (Model.MeritosAsignados?.Any() == true)
-                {
-                    <ul class="list-group">
-                        @foreach (var merito in Model.MeritosAsignados)
+<div class="card mb-4 shadow border-2 border-primary rounded-3">
+    <div class="bg-primary">
+        <div class="card-title text-center text-white"><h3>Agregar Al Expediente</h3></div>
+    </div>
+    <div class="card-body">
+        <div class="d-flex justify-content-evenly gap-3 mb-3">
+            <a class="btn btn-success" asp-controller="Meritos" asp-action="Crear" asp-route-id="@Model.Id">Agregar un Merito</a>
+            <a class="btn btn-danger" asp-controller="Demeritos" asp-action="Crear" asp-route-id="@Model.Id">Agregar un Demerito</a>
+            <a class="btn btn-warning" asp-controller="Actas" asp-action="Crear" asp-route-id="@Model.Id">Agregar un Acta</a>
+            <a class="btn btn-info" asp-controller="Fichas" asp-action="Crear" asp-route-id="@Model.Id">Agregar una Ficha</a>
+        </div>
+        <div class="d-flex justify-content-evenly gap-3">
+            <span class="text-dark fs-bold"><strong>Total de Meritos: @Model.MeritosAsignados.Count()</strong></span>
+            <span class="text-dark fs-bold"><strong>Total de Demeritos: @Model.DemeritosAsignados.Count()</strong></span>
+            <span class="text-dark fs-bold"><strong>Total de Actas: @Model.ActasAsignadas.Count()</strong></span>
+            <span class="text-dark fs-bold"><strong>Total de Fichas: @Model.FichasAsignadas.Count()</strong></span>
+        </div>
+    </div>
+</div>
+
+<div class="accordion accordion-flush" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <strong>Meritos</strong>
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4 mb-4 text-center">
+                        @if (Model.MeritosAsignados?.Any() == true)
                         {
-                            <li class="list-group-item">
-                                <strong>@merito.Comentarios</strong>
-                                <br />
-                                <small>Asignado por: @merito.Docente?.NombreCompleto</small>
-                            </li>
+                            @foreach (var merito in Model.MeritosAsignados)
+                            {
+                                <div class="card shadow border-2 border-success">
+                                    <div class="card-header bg-success text-white">Méritos</div>
+                                    <div class="card-body">
+                                        <p>@merito.Meritos.Merito</p>
+                                        <p><strong>@merito.Comentarios</strong></p>
+                                        <p>
+                                            <small>Asignado por: @merito.Docente?.NombreCompleto</small>
+                                            <div class="d-flex justify-content-start gap-3">
+                                                <a class="btn btn-primary" asp-controller="Meritos" asp-action="Detalle" asp-route-id="@merito.Id"><i class="bi bi-info-circle"></i></a>
+                                                <a class="btn btn-secondary" asp-controller="Meritos" asp-action="Editar" asp-route-id="@merito.Id"><i class="bi bi-pencil"></i></a>
+                                                <a class="btn btn-danger" asp-controller="Meritos" asp-action="Borrar" asp-route-id="@merito.Id"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                    </div>
+                                </div>
+                            }
                         }
-                    </ul>
-                }
-                else
-                {
-                    <p class="text-muted">No se han registrado méritos.</p>
-                }
+                        else
+                        {
+                            <p class="fs-bold"><strong>No se han registrado méritos.</strong></p>
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="col-md-6 mb-4">
-        <div class="card shadow border-2 border-danger">
-            <div class="card-header bg-danger text-white">Deméritos</div>
-            <div class="card-body">
-                @if (Model.DemeritosAsignados?.Any() == true)
-                {
-                    <ul class="list-group">
-                        @foreach (var demerito in Model.DemeritosAsignados)
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong>Demeritos</strong>
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4 mb-4 text-center">
+                        @if (Model.DemeritosAsignados?.Any() == true)
                         {
-                            <li class="list-group-item">
-                                <strong>@demerito.Comentarios</strong>
-                                <br />
-                                <small>Asignado por: @demerito.Docente?.NombreCompleto</small>
-                            </li>
+                            @foreach (var demerito in Model.DemeritosAsignados)
+                            {
+                                <div class="card shadow border-2 border-danger">
+                                    <div class="card-header bg-success text-white">Deméritos</div>
+                                    <div class="card-body">
+                                        <p>@demerito.Demeritos.Demerito</p>
+                                        <p><strong>@demerito.Comentarios</strong></p>
+                                        <p>
+                                            <small>Asignado por: @demerito.Docente?.NombreCompleto</small>
+                                            <div class="d-flex justify-content-start gap-3">
+                                                <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@demerito.Id"><i class="bi bi-info-circle"></i></a>
+                                                <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@demerito.Id"><i class="bi bi-pencil"></i></a>
+                                                <a class="btn btn-danger" asp-action="Borrar" asp-route-id="@demerito.Id"><i class="bi bi-trash"></i></a>
+                                            </div>
+                                    </div>
+                                </div>
+                            }
                         }
-                    </ul>
-                }
-                else
-                {
-                    <p class="text-muted">No se han registrado deméritos.</p>
-                }
+                        else
+                        {
+                            <p class="fs-bold">No se han registrado deméritos.</p>
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="col-md-6 mb-4">
-        <div class="card shadow border-2 border-warning">
-            <div class="card-header bg-warning">Fichas</div>
-            <div class="card-body">
-                @if (Model.FichasAsignadas?.Any() == true)
-                {
-                    <ul class="list-group">
-                        @foreach (var ficha in Model.FichasAsignadas)
-                        {
-                            <li class="list-group-item">
-                                <strong>@ficha.Comentarios</strong>
-                                <br />
-                                <small>Asignada por: @ficha.Docente?.NombreCompleto</small>
-                            </li>
-                        }
-                    </ul>
-                }
-                else
-                {
-                    <p class="text-muted">No se han registrado fichas.</p>
-                }
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Actas</strong>
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4 mb-4 text-center">
+                        <div class="card shadow border-2 border-warning">
+                            <div class="card-header bg-warning">Fichas</div>
+                            <div class="card-body">
+                                @if (Model.FichasAsignadas?.Any() == true)
+                                {
+                                    <ul class="list-group">
+                                        @foreach (var ficha in Model.FichasAsignadas)
+                                        {
+                                            <li class="list-group-item">
+                                                <strong>@ficha.Comentarios</strong>
+                                                <br />
+                                                <small>Asignada por: @ficha.Docente?.NombreCompleto</small>
+                                            </li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <p class="text-muted">No se han registrado fichas.</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="col-md-6 mb-4">
-        <div class="card shadow border-2 border-info">
-            <div class="card-header bg-info text-white">Actas</div>
-            <div class="card-body">
-                @if (Model.ActasAsignadas?.Any() == true)
-                {
-                    <ul class="list-group">
-                        @foreach (var acta in Model.ActasAsignadas)
-                        {
-                            <li class="list-group-item">
-                                <strong>@acta.Comentarios</strong>
-                                <br />
-                                <small>Emitida por: @acta.Docente?.NombreCompleto</small>
-                            </li>
-                        }
-                    </ul>
-                }
-                else
-                {
-                    <p class="text-muted">No se han registrado actas.</p>
-                }
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <strong>Fichas</strong>
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-4 mb-4 text-center">
+                        <div class="card shadow border-2 border-info">
+                            <div class="card-header bg-info text-white">Actas</div>
+                            <div class="card-body">
+                                @if (Model.ActasAsignadas?.Any() == true)
+                                {
+                                    <ul class="list-group">
+                                        @foreach (var acta in Model.ActasAsignadas)
+                                        {
+                                            <li class="list-group-item">
+                                                <strong>@acta.Comentarios</strong>
+                                                <br />
+                                                <small>Emitida por: @acta.Docente?.NombreCompleto</small>
+                                            </li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <p class="text-muted">No se han registrado actas.</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

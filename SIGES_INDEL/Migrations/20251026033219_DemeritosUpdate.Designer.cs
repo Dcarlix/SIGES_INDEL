@@ -12,8 +12,8 @@ using SIGES_INDEL.Datos;
 namespace SIGES_INDEL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251023040933_DocentesNuevos")]
-    partial class DocentesNuevos
+    [Migration("20251026033219_DemeritosUpdate")]
+    partial class DemeritosUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -386,9 +386,6 @@ namespace SIGES_INDEL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly>("FechaNacimiento")
-                        .HasColumnType("date");
-
                     b.Property<int>("GradosId")
                         .HasColumnType("int");
 
@@ -404,7 +401,8 @@ namespace SIGES_INDEL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GradosId");
+                    b.HasIndex("GradosId")
+                        .IsUnique();
 
                     b.ToTable("TDocentes");
                 });
@@ -504,10 +502,7 @@ namespace SIGES_INDEL.Migrations
                     b.Property<DateOnly>("FechaMatricula")
                         .HasColumnType("date");
 
-                    b.Property<int>("GradoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("GradosId")
+                    b.Property<int>("GradosId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -536,20 +531,14 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Comentarios")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DocenteId")
+                    b.Property<int>("DocenteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("EstudianteId")
+                    b.Property<int>("EstudianteId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("FechaRegistro")
                         .HasColumnType("date");
-
-                    b.Property<int>("NIE")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NIP")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -571,26 +560,17 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Comentarios")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DemeritoId")
+                    b.Property<int>("DemeritosId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("DemeritosId")
+                    b.Property<int>("DocenteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("DocenteId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("EstudianteId")
+                    b.Property<int>("EstudianteId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("FechaRegistro")
                         .HasColumnType("date");
-
-                    b.Property<int>("NIE")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NIP")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -614,10 +594,10 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Comentarios")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DocenteId")
+                    b.Property<int>("DocenteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("EstudianteId")
+                    b.Property<int>("EstudianteId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("FechaRegistro")
@@ -626,12 +606,6 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Ficha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("NIE")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NIP")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -653,25 +627,16 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Comentarios")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DocenteId")
+                    b.Property<int>("DocenteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("EstudianteId")
+                    b.Property<int>("EstudianteId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("FechaRegistro")
                         .HasColumnType("date");
 
-                    b.Property<int>("MeritoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("MeritosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NIE")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NIP")
+                    b.Property<int>("MeritosId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -749,8 +714,8 @@ namespace SIGES_INDEL.Migrations
             modelBuilder.Entity("SIGES_INDEL.Models.Docente", b =>
                 {
                     b.HasOne("SIGES_INDEL.Models.Complementos.Grados", "Grados")
-                        .WithMany()
-                        .HasForeignKey("GradosId")
+                        .WithOne("Docente")
+                        .HasForeignKey("SIGES_INDEL.Models.Docente", "GradosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -808,7 +773,9 @@ namespace SIGES_INDEL.Migrations
 
                     b.HasOne("SIGES_INDEL.Models.Complementos.Grados", "Grados")
                         .WithMany()
-                        .HasForeignKey("GradosId");
+                        .HasForeignKey("GradosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Estado");
 
@@ -821,11 +788,15 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
                         .WithMany()
-                        .HasForeignKey("DocenteId");
+                        .HasForeignKey("DocenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Estudiante", "Estudiante")
                         .WithMany("ActasAsignadas")
-                        .HasForeignKey("EstudianteId");
+                        .HasForeignKey("EstudianteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Docente");
 
@@ -836,15 +807,21 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Complementos.Demeritos", "Demeritos")
                         .WithMany()
-                        .HasForeignKey("DemeritosId");
+                        .HasForeignKey("DemeritosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
                         .WithMany()
-                        .HasForeignKey("DocenteId");
+                        .HasForeignKey("DocenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Estudiante", "Estudiante")
                         .WithMany("DemeritosAsignados")
-                        .HasForeignKey("EstudianteId");
+                        .HasForeignKey("EstudianteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Demeritos");
 
@@ -857,11 +834,15 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
                         .WithMany()
-                        .HasForeignKey("DocenteId");
+                        .HasForeignKey("DocenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Estudiante", "Estudiante")
                         .WithMany("FichasAsignadas")
-                        .HasForeignKey("EstudianteId");
+                        .HasForeignKey("EstudianteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Docente");
 
@@ -872,21 +853,32 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
                         .WithMany()
-                        .HasForeignKey("DocenteId");
+                        .HasForeignKey("DocenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Estudiante", "Estudiante")
                         .WithMany("MeritosAsignados")
-                        .HasForeignKey("EstudianteId");
+                        .HasForeignKey("EstudianteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Complementos.Meritos", "Meritos")
                         .WithMany()
-                        .HasForeignKey("MeritosId");
+                        .HasForeignKey("MeritosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Docente");
 
                     b.Navigation("Estudiante");
 
                     b.Navigation("Meritos");
+                });
+
+            modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Grados", b =>
+                {
+                    b.Navigation("Docente");
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Estudiante", b =>

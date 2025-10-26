@@ -27,7 +27,7 @@ namespace SIGES_INDEL.Models.Registros
 
 		//Relacion con tabla Demeritos
 		[Display(Name = "Tipo de demerito")]
-		public int DemeritoId { get; set; }
+		public int DemeritosId { get; set; }
 		[Display(Name = "Tipo de Demerito")]
 		public Demeritos Demeritos { get; set; }
 

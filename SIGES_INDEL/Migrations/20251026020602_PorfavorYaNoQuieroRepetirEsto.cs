@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SIGES_INDEL.Migrations
 {
     /// <inheritdoc />
-    public partial class DocentesNuevos : Migration
+    public partial class PorfavorYaNoQuieroRepetirEsto : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -162,7 +162,6 @@ namespace SIGES_INDEL.Migrations
                     NIP = table.Column<int>(type: "int", nullable: false),
                     NombreCompleto = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagenDocente = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
-                    FechaNacimiento = table.Column<DateOnly>(type: "date", nullable: false),
                     GradosId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -268,10 +267,8 @@ namespace SIGES_INDEL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaRegistro = table.Column<DateOnly>(type: "date", nullable: false),
-                    NIE = table.Column<int>(type: "int", nullable: false),
-                    EstudianteId = table.Column<int>(type: "int", nullable: true),
-                    NIP = table.Column<int>(type: "int", nullable: false),
-                    DocenteId = table.Column<int>(type: "int", nullable: true),
+                    EstudianteId = table.Column<int>(type: "int", nullable: false),
+                    DocenteId = table.Column<int>(type: "int", nullable: false),
                     Acta = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Comentarios = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -282,12 +279,14 @@ namespace SIGES_INDEL.Migrations
                         name: "FK_TActasAsignadas_TDocentes_DocenteId",
                         column: x => x.DocenteId,
                         principalTable: "TDocentes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TActasAsignadas_TEstudiantes_EstudianteId",
                         column: x => x.EstudianteId,
                         principalTable: "TEstudiantes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -297,10 +296,8 @@ namespace SIGES_INDEL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaRegistro = table.Column<DateOnly>(type: "date", nullable: false),
-                    NIE = table.Column<int>(type: "int", nullable: false),
-                    EstudianteId = table.Column<int>(type: "int", nullable: true),
-                    NIP = table.Column<int>(type: "int", nullable: false),
-                    DocenteId = table.Column<int>(type: "int", nullable: true),
+                    EstudianteId = table.Column<int>(type: "int", nullable: false),
+                    DocenteId = table.Column<int>(type: "int", nullable: false),
                     DemeritoId = table.Column<int>(type: "int", nullable: false),
                     DemeritosId = table.Column<int>(type: "int", nullable: true),
                     Comentarios = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -317,12 +314,14 @@ namespace SIGES_INDEL.Migrations
                         name: "FK_TDemeritosAsignados_TDocentes_DocenteId",
                         column: x => x.DocenteId,
                         principalTable: "TDocentes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TDemeritosAsignados_TEstudiantes_EstudianteId",
                         column: x => x.EstudianteId,
                         principalTable: "TEstudiantes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -332,10 +331,8 @@ namespace SIGES_INDEL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaRegistro = table.Column<DateOnly>(type: "date", nullable: false),
-                    NIE = table.Column<int>(type: "int", nullable: false),
-                    EstudianteId = table.Column<int>(type: "int", nullable: true),
-                    NIP = table.Column<int>(type: "int", nullable: false),
-                    DocenteId = table.Column<int>(type: "int", nullable: true),
+                    EstudianteId = table.Column<int>(type: "int", nullable: false),
+                    DocenteId = table.Column<int>(type: "int", nullable: false),
                     Ficha = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Comentarios = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -346,12 +343,14 @@ namespace SIGES_INDEL.Migrations
                         name: "FK_TFichasAsignadas_TDocentes_DocenteId",
                         column: x => x.DocenteId,
                         principalTable: "TDocentes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TFichasAsignadas_TEstudiantes_EstudianteId",
                         column: x => x.EstudianteId,
                         principalTable: "TEstudiantes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -362,8 +361,7 @@ namespace SIGES_INDEL.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaMatricula = table.Column<DateOnly>(type: "date", nullable: false),
                     EstudianteId = table.Column<int>(type: "int", nullable: false),
-                    GradoId = table.Column<int>(type: "int", nullable: false),
-                    GradosId = table.Column<int>(type: "int", nullable: true),
+                    GradosId = table.Column<int>(type: "int", nullable: false),
                     EstadoId = table.Column<int>(type: "int", nullable: false),
                     FechaEgresion = table.Column<DateOnly>(type: "date", nullable: false)
                 },
@@ -386,7 +384,8 @@ namespace SIGES_INDEL.Migrations
                         name: "FK_TMatriculas_TGrados_GradosId",
                         column: x => x.GradosId,
                         principalTable: "TGrados",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -396,12 +395,9 @@ namespace SIGES_INDEL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaRegistro = table.Column<DateOnly>(type: "date", nullable: false),
-                    NIE = table.Column<int>(type: "int", nullable: false),
-                    EstudianteId = table.Column<int>(type: "int", nullable: true),
-                    NIP = table.Column<int>(type: "int", nullable: false),
-                    DocenteId = table.Column<int>(type: "int", nullable: true),
-                    MeritoId = table.Column<int>(type: "int", nullable: false),
-                    MeritosId = table.Column<int>(type: "int", nullable: true),
+                    EstudianteId = table.Column<int>(type: "int", nullable: false),
+                    DocenteId = table.Column<int>(type: "int", nullable: false),
+                    MeritosId = table.Column<int>(type: "int", nullable: false),
                     Comentarios = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -411,17 +407,20 @@ namespace SIGES_INDEL.Migrations
                         name: "FK_TMeritosAsignados_TDocentes_DocenteId",
                         column: x => x.DocenteId,
                         principalTable: "TDocentes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TMeritosAsignados_TEstudiantes_EstudianteId",
                         column: x => x.EstudianteId,
                         principalTable: "TEstudiantes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TMeritosAsignados_TMeritos_MeritosId",
                         column: x => x.MeritosId,
                         principalTable: "TMeritos",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -583,7 +582,8 @@ namespace SIGES_INDEL.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_TDocentes_GradosId",
                 table: "TDocentes",
-                column: "GradosId");
+                column: "GradosId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_TEstudiantes_EstadoCivilId",

@@ -1,0 +1,61 @@
+﻿@model SIGES_INDEL.Models.Registros.MeritosAsignados
+@{
+    SIGES_INDEL.Models.Estudiante estudiante = ViewBag.estudiante as SIGES_INDEL.Models.Estudiante ?? new SIGES_INDEL.Models.Estudiante();
+    List<SIGES_INDEL.Models.Complementos.Meritos> xmeritos = ViewBag.meritos as List<SIGES_INDEL.Models.Complementos.Meritos>;
+    List<SIGES_INDEL.Models.Docente> xdocentes = ViewBag.docentes as List<SIGES_INDEL.Models.Docente>;
+}
+@{
+    ViewData["Title"] = "Informacion del Merito";
+}
+<form asp-action="Detalle">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Merito de @estudiante.NombreCompleto</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="EstudianteId" class="control-label"></label>
+                                <input type="hidden" asp-for="EstudianteId" value="@estudiante.Id" />
+                                <input value="@estudiante.NombreCompleto" class="form-control" readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaRegistro" class="control-label"></label>
+                                <input asp-for="FechaRegistro" type="date" class="form-control" disabled readonly/>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="DocenteId" class="control-label"></label>
+                                <select asp-for="DocenteId" class="form-control" disabled>
+                                    <option selected value="">Selecciona Docente</option>
+                                    @foreach (var item in xdocentes)
+                                    {
+                                        <option value="@item.Id">@item.NombreCompleto</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="MeritosId" class="control-label"></label>
+                                <select asp-for="MeritosId" class="form-control" disabled>
+                                    <option selected value="">Selecciona Merito</option>
+                                    @foreach (var item in xmeritos)
+                                    {
+                                        <option value="@item.Id">@item.Merito</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label asp-for="Comentarios" class="control-label"></label>
+                                <input asp-for="Comentarios" class="form-control" readonly disabled/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <a class="btn btn-secondary me-2" asp-controller="Expedientes" asp-action="Index" asp-route-id="@estudiante.Id">Regresar</a>
+        </div>
+    </div>
+</form>
+

@@ -1,0 +1,67 @@
+﻿@model SIGES_INDEL.Models.Registros.DemeritosAsignados
+@{
+    SIGES_INDEL.Models.Estudiante estudiante = ViewBag.estudiante as SIGES_INDEL.Models.Estudiante ?? new SIGES_INDEL.Models.Estudiante();
+    List<SIGES_INDEL.Models.Complementos.Demeritos> xdemeritos = ViewBag.demeritos as List<SIGES_INDEL.Models.Complementos.Demeritos>;
+    List<SIGES_INDEL.Models.Docente> xdocentes = ViewBag.docentes as List<SIGES_INDEL.Models.Docente>;
+}
+@{
+    ViewData["Title"] = "Editar Demerito";
+}
+<form asp-action="Editar">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Edita el Demerito de @estudiante.NombreCompleto</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="EstudianteId" class="control-label"></label>
+                                <input type="hidden" asp-for="EstudianteId" value="@estudiante.Id" />
+                                <input value="@estudiante.NombreCompleto" class="form-control" readonly />
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaRegistro" class="control-label"></label>
+                                <input asp-for="FechaRegistro" type="date" class="form-control" />
+                                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="DocenteId" class="control-label"></label>
+                                <select asp-for="DocenteId" class="form-control">
+                                    <option selected value="">Selecciona Docente</option>
+                                    @foreach (var item in xdocentes)
+                                    {
+                                        <option value="@item.Id">@item.NombreCompleto</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="DocenteId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="DemeritosId" class="control-label"></label>
+                                <select asp-for="DemeritosId" class="form-control">
+                                    <option selected value="">Selecciona Merito</option>
+                                    @foreach (var item in xdemeritos)
+                                    {
+                                        <option value="@item.Id">@item.Demerito</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="DemeritosId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <label asp-for="Comentarios" class="control-label"></label>
+                                <input asp-for="Comentarios" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">Guardar Cambios</button>
+            <a class="btn btn-secondary me-2" asp-controller="Expedientes" asp-action="Index" asp-route-id="@estudiante.Id">Cancelar</a>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

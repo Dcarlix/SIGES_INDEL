@@ -38,7 +38,7 @@ namespace SIGES_INDEL.Datos.Repositorios
 			return await ContextoDatos.TGrados.ToListAsync();
 		}
 
-		public async Task<IEnumerable> ListarMertios()
+		public async Task<IEnumerable> ListarMeritos()
 		{
 			return await ContextoDatos.TMeritos.ToListAsync();
 		}

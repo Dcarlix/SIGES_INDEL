@@ -5,22 +5,22 @@
 namespace SIGES_INDEL.Migrations
 {
     /// <inheritdoc />
-    public partial class GradosCorrection : Migration
+    public partial class DemeritosUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_TMatriculas_TGrados_GradosId",
-                table: "TMatriculas");
+                name: "FK_TDemeritosAsignados_TDemertios_DemeritosId",
+                table: "TDemeritosAsignados");
 
             migrationBuilder.DropColumn(
-                name: "GradoId",
-                table: "TMatriculas");
+                name: "DemeritoId",
+                table: "TDemeritosAsignados");
 
             migrationBuilder.AlterColumn<int>(
-                name: "GradosId",
-                table: "TMatriculas",
+                name: "DemeritosId",
+                table: "TDemeritosAsignados",
                 type: "int",
                 nullable: false,
                 defaultValue: 0,
@@ -29,10 +29,10 @@ namespace SIGES_INDEL.Migrations
                 oldNullable: true);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_TMatriculas_TGrados_GradosId",
-                table: "TMatriculas",
-                column: "GradosId",
-                principalTable: "TGrados",
+                name: "FK_TDemeritosAsignados_TDemertios_DemeritosId",
+                table: "TDemeritosAsignados",
+                column: "DemeritosId",
+                principalTable: "TDemertios",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }
@@ -41,29 +41,29 @@ namespace SIGES_INDEL.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_TMatriculas_TGrados_GradosId",
-                table: "TMatriculas");
+                name: "FK_TDemeritosAsignados_TDemertios_DemeritosId",
+                table: "TDemeritosAsignados");
 
             migrationBuilder.AlterColumn<int>(
-                name: "GradosId",
-                table: "TMatriculas",
+                name: "DemeritosId",
+                table: "TDemeritosAsignados",
                 type: "int",
                 nullable: true,
                 oldClrType: typeof(int),
                 oldType: "int");
 
             migrationBuilder.AddColumn<int>(
-                name: "GradoId",
-                table: "TMatriculas",
+                name: "DemeritoId",
+                table: "TDemeritosAsignados",
                 type: "int",
                 nullable: false,
                 defaultValue: 0);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_TMatriculas_TGrados_GradosId",
-                table: "TMatriculas",
-                column: "GradosId",
-                principalTable: "TGrados",
+                name: "FK_TDemeritosAsignados_TDemertios_DemeritosId",
+                table: "TDemeritosAsignados",
+                column: "DemeritosId",
+                principalTable: "TDemertios",
                 principalColumn: "Id");
         }
     }

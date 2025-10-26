@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using SIGES_INDEL.Datos;
 using SIGES_INDEL.Datos.Interfaces;
+using SIGES_INDEL.Datos.Interfaces.InterfacesRegistro;
 using SIGES_INDEL.Datos.Repositorios;
+using SIGES_INDEL.Datos.Repositorios.RepositoriosRegistro;
 using SIGES_INDEL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +30,10 @@ builder.Services.AddScoped<IRepositorioUtilidades, RepositorioUtilidades>();
 builder.Services.AddScoped<IRepositorioMatriculas, RepositorioMatriculas>();
 builder.Services.AddScoped<IRepositorioDocentes, RepositorioDocentes>();
 builder.Services.AddScoped<IRepositorioExpedientes, RepositorioExpedientes>();
+builder.Services.AddScoped<IRepositorioMeritos, RepositorioMeritos>();
+builder.Services.AddScoped<IRepositorioDemeritos, RepositorioDemeritos>();
+builder.Services.AddScoped<IRepositorioFichas, RepositorioFichas>();
+builder.Services.AddScoped<IRepositorioActas, RepositorioActas>();
 
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(opciones =>

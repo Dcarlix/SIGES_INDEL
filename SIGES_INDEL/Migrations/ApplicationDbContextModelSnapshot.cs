@@ -557,10 +557,7 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Comentarios")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DemeritoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("DemeritosId")
+                    b.Property<int>("DemeritosId")
                         .HasColumnType("int");
 
                     b.Property<int>("DocenteId")
@@ -636,10 +633,7 @@ namespace SIGES_INDEL.Migrations
                     b.Property<DateOnly>("FechaRegistro")
                         .HasColumnType("date");
 
-                    b.Property<int>("MeritoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("MeritosId")
+                    b.Property<int>("MeritosId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -810,7 +804,9 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Complementos.Demeritos", "Demeritos")
                         .WithMany()
-                        .HasForeignKey("DemeritosId");
+                        .HasForeignKey("DemeritosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
                         .WithMany()
@@ -866,7 +862,9 @@ namespace SIGES_INDEL.Migrations
 
                     b.HasOne("SIGES_INDEL.Models.Complementos.Meritos", "Meritos")
                         .WithMany()
-                        .HasForeignKey("MeritosId");
+                        .HasForeignKey("MeritosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Docente");
 

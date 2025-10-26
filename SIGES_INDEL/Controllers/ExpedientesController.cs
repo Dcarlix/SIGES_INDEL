@@ -15,6 +15,8 @@ namespace SIGES_INDEL.Controllers
 		}
 		public async Task<IActionResult> Index(int id)
 		{
+			
+
 			var estudiante = await _Irepositorio.Index(id);
 			if (estudiante == null)
 			{
