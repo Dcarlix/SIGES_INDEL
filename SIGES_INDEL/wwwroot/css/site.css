@@ -20,3 +20,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.fondo-svg {
+    background-image: url("../images/fondo.svg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondo-footer {
+    background-color: #EBEBEB;
+}
+.transition{
+    
+}

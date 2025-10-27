@@ -103,5 +103,34 @@ namespace SIGES_INDEL.Controllers
 			}
 			return View(estudiante);
 		}
+		public async Task<IActionResult> Borrar(int? id)
+		{
+			ViewBag.grados = await _IrepositorioUtilidades.ListarGrados();
+			if (id == null)
+			{
+				return NotFound();
+			}
+			var docente = await _Irepositorio.Buscar(id);
+			if (docente == null)
+			{
+				return NotFound();
+			}
+			return View(docente);
+		}
+		[HttpPost, ActionName("Borrar")]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> BorrarDocente(Docente docente)
+		{
+
+			if (docente == null)
+			{
+				return View();
+			}
+
+			await _Irepositorio.Borrar(docente);
+			TempData["mensaje"] = "Docente eliminado correctamente.";
+			TempData["tipo"] = "warning";
+			return RedirectToAction(nameof(Index));
+		}
 	}
 }

@@ -10,5 +10,7 @@ namespace SIGES_INDEL.Datos.Interfaces
 		public Task Crear(Docente docente);
 		public Task Actualizar(Docente docente);
 		public Task<Docente> Buscar(int? id);
+		public Task Borrar(Docente docente);
+
 	}
 }

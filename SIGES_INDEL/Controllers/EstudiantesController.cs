@@ -148,7 +148,7 @@ namespace SIGES_INDEL.Controllers
 		}
 		[HttpPost, ActionName("Borrar")]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> BorrarCliente(Estudiante estudiante)
+		public async Task<IActionResult> BorrarEstudiante(Estudiante estudiante)
 		{
 
 			if (estudiante == null)
@@ -157,7 +157,7 @@ namespace SIGES_INDEL.Controllers
 			}
 
 			await _Irepositorio.Borrar(estudiante);
-			TempData["mensaje"] = "Estudiante eliminado correctamente.";
+			TempData["mensaje"] = "Docente eliminado correctamente.";
 			TempData["tipo"] = "warning";
 			return RedirectToAction(nameof(Index));
 		}

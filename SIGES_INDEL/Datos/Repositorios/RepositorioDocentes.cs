@@ -23,6 +23,11 @@ namespace SIGES_INDEL.Datos.Repositorios
 		{
 			return docente = await ContextoDatos.TDocentes.Include(e => e.Grados).FirstOrDefaultAsync(e => e.Id == id);
 		}
+		public async Task Borrar(Docente docente)
+		{
+			ContextoDatos.TDocentes.Remove(docente);
+			await ContextoDatos.SaveChangesAsync();
+		}
 
 		public async Task Crear(Docente docente)
 		{

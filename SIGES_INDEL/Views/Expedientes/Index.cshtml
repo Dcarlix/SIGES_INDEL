@@ -6,9 +6,11 @@
 
 <h1 class="text-center mb-4">Expediente de @Model.NombreCompleto</h1>
 
-<div class="card mb-4 shadow border-2 border-primary rounded-3">
+<div class="card shadow border-2 border-info rounded-3 mb-4">
+    <div class="card-header bg-info">
+        <h4 class="text-dark text-center">Datos Generales</h4>
+    </div>
     <div class="card-body">
-        <h4 class="text-info text-center">Datos Generales</h4>
         <div class="row text-center">
             <p class="col"><strong>NIE:</strong> @Model.NIE</p>
             <p class="col"><strong>Edad:</strong> @Model.Edad años</p>
@@ -22,9 +24,9 @@
     </div>
 </div>
 
-<div class="card mb-4 shadow border-2 border-primary rounded-3">
-    <div class="bg-primary">
-        <div class="card-title text-center text-white"><h3>Agregar Al Expediente</h3></div>
+<div class="card shadow border-2 border-info rounded-3 mb-4">
+    <div class="bg-info">
+        <div class="card-title text-center text-dark"><h3>Agregar Al Expediente</h3></div>
     </div>
     <div class="card-body">
         <div class="d-flex justify-content-evenly gap-3 mb-3">

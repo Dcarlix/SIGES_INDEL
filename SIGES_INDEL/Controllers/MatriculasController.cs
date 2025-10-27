@@ -119,7 +119,7 @@ namespace SIGES_INDEL.Controllers
 		}
 		[HttpPost, ActionName("Borrar")]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> BorrarCliente(Matriculas matriculas)
+		public async Task<IActionResult> BorrarMatricula(Matriculas matriculas)
 		{
 			if (matriculas == null)
 			{

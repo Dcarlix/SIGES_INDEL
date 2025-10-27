@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\default-avatar.png"
     },
     {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\fondo.svg",
+      "PackagePath": "staticwebassets\\images\\fondo.svg"
+    },
+    {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

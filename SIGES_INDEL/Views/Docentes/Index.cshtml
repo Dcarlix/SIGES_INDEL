@@ -1,4 +1,7 @@
-﻿@model IEnumerable<SIGES_INDEL.Models.Docente>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model IEnumerable<SIGES_INDEL.Models.Docente>
 @{
     ViewData["Title"] = "Listado de Docentes";
 }
@@ -61,7 +64,11 @@
 
                                 <div class="d-flex justify-content-start gap-3">
                                     <a class="btn btn-primary" asp-action="Detalle" asp-route-id="@docente.Id">Detalles</a>
-                                    <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@docente.Id">Modificar</a>
+                                    @if (User.IsInRole("Administrador"))
+                                    {
+                                        <a class="btn btn-secondary" asp-action="Editar" asp-route-id="@docente.Id">Modificar</a>
+                                        <a class="btn btn-danger" asp-action="Borrar" asp-route-id="@docente.Id">Eliminar</a>
+                                    }
                                 </div>
                             </div>
                         </div>

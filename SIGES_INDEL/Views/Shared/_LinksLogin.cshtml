@@ -8,9 +8,9 @@
         <li>
             <div>
                 <form asp-action="Logout" asp-controller="Usuarios">
-                    <div class="text-center">
-                        <span class="mx-4 fw-bold">@User.Identity.Name</span>
-                        <button type="submit" class="btn btn-primary text-dark"><i class="bi bi-door-open"></i></button>
+                    <div class="d-flex gap-3 justify-content-center align-items-center" style="height: 100%;">
+                        <span class="fw-bold">@User.Identity.Name</span>
+                        <button type="submit" class="btn btn-info text-dark">Salir <i class="bi bi-door-open"></i></button>
                     </div>
                 </form>
             </div>

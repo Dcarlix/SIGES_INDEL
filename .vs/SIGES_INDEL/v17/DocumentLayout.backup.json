@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\controllers\\controladoresdatos\\demeritosdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\controllers\\controladoresdatos\\demeritosdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\demeritosdata\\borrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\demeritosdata\\borrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\shared\\_linkslogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\shared\\_linkslogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SIGES_INDEL\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAADIAAAB8AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-26T20:56:35.694Z",
+              "WhenOpened": "2025-10-27T04:39:19.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Borrar.cshtml",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\DemeritosData\\Borrar.cshtml",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\DemeritosData\\Borrar.cshtml",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\DemeritosData\\Borrar.cshtml",
-              "RelativeToolTip": "SIGES_INDEL\\Views\\DemeritosData\\Borrar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "Title": "_LinksLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Shared\\_LinksLogin.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Shared\\_LinksLogin.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Shared\\_LinksLogin.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Shared\\_LinksLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-26T20:55:44.261Z",
+              "WhenOpened": "2025-10-27T04:17:34.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DemeritosDataController.cs",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Controllers\\ControladoresDatos\\DemeritosDataController.cs",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Controllers\\ControladoresDatos\\DemeritosDataController.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Controllers\\ControladoresDatos\\DemeritosDataController.cs",
-              "RelativeToolTip": "SIGES_INDEL\\Controllers\\ControladoresDatos\\DemeritosDataController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T20:54:56.546Z",
+              "DocumentIndex": 0,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T04:13:55.842Z",
               "EditorCaption": ""
             }
           ]

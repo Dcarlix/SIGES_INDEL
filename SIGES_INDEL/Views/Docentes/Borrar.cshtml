@@ -3,17 +3,15 @@
     List<SIGES_INDEL.Models.Complementos.Grados> xgrados = ViewBag.grados as List<SIGES_INDEL.Models.Complementos.Grados>;
 }
 @{
-    ViewData["Title"] = "Modificar Docente";
+    ViewData["Title"] = "Borrar docente";
 }
-<form asp-action="Editar" enctype="multipart/form-data">
+<form asp-action="Borrar" enctype="multipart/form-data" onsubmit="confirmarEliminacion(event)">
     <div class="container py-4">
-        <h3 class="text-center mb-4 fw-bold">Modifar Datos de Docente</h3>
-        <div class="card shadow mb-4 bg-light border-2 border-secondary rounded-3">
+        <h3 class="text-center mb-4 fw-bold">Borrar al Docente @Model.NombreCompleto</h3>
+        <div class="card shadow mb-4 bg-light border-2 border-danger rounded-3">
             <div class="card-body">
                 <div class="row">
                     <div class="col-3">
-                        <label asp-for="ImagenDocenteArchivo" class="control-label"></label>
-                        <input asp-for="ImagenDocenteArchivo" type="file" class="form-control" accept="image/*" onchange="mostrarPreview(event)" />
                         @if (Model.ImagenDocente != null)
                         {
                             <img id="previewImagen" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImagenDocente)"
@@ -33,32 +31,29 @@
                     <div class="col-9">
                         <div class="mb-4">
                             <label asp-for="NombreCompleto" class="control-label"></label>
-                            <input asp-for="NombreCompleto" class="form-control" placeholder="Nombre completo" />
-                            <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                            <input asp-for="NombreCompleto" class="form-control" placeholder="Nombre completo" disabled readonly />
                         </div>
 
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <label asp-for="NIP" class="control-label"></label>
-                                <input asp-for="NIP" type="number" class="form-control" />
-                                <span asp-validation-for="NIP" class="text-danger"></span>
+                                <input asp-for="NIP" type="number" class="form-control" disabled readonly />
                             </div>
                             <div class="col-md-6">
                                 <label asp-for="GradosId" class="control-label"></label>
-                                <select asp-for="GradosId" class="form-control">
+                                <select asp-for="GradosId" class="form-control" disabled>
                                     <option selected value="">Selecciona Grado que coordinara</option>
                                     @foreach (var item in xgrados)
                                     {
                                         <option value="@item.Id">@item.Abreviacion</option>
                                     }
                                 </select>
-                                <span asp-validation-for="GradosId" class="text-danger"></span>
                             </div>
                         </div>
 
                         <div class="d-flex justify-content-start gap-3">
-                            <button type="submit" class="btn btn-success">Guardar Cambios</button>
-                            <a class="btn btn-secondary" asp-controller="Docentes" asp-action="Index">Cancelar</a>
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                            <a class="btn btn-secondary mx-2" asp-controller="Docentes" asp-action="Index">Regresar</a>
                         </div>
                     </div>
                 </div>
@@ -67,25 +62,23 @@
     </div>
 </form>
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-
     <script>
-        // Función que muestra la previsualización al seleccionar una imagen
-        function mostrarPreview(event) {
-            const input = event.target;
-            const file = input.files[0];
-            const preview = document.getElementById('previewImagen');
-
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    preview.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            } else {
-                // Si el usuario quita la imagen, mostramos un avatar por defecto
-                preview.src = '/images/default-avatar.png';
-            }
+        function confirmarEliminacion(event) {
+           event.preventDefault();
+           Swal.fire({
+               title: '¿Estás seguro?',
+               text: "Esta acción no se puede deshacer, Verifica que el Docente no coordine ningun Grado ni haya puesto Aspectos Academicos!!!!.",
+               icon: 'warning',
+               showCancelButton: true,
+               confirmButtonColor: '#d33',
+               cancelButtonColor: '#3085d6',
+               confirmButtonText: 'Sí, eliminar',
+               cancelButtonText: 'Cancelar'
+           }).then((result) => {
+               if (result.isConfirmed) {
+                   event.target.closest('form').submit();
+               }
+           });
         }
     </script>
 }

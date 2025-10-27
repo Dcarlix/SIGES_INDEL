@@ -9,13 +9,13 @@
 }
 <form asp-action="Detalle" onsubmit="confirmarEliminacion(event)">
     <div class="container py-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
+        <div class="card shadow border-2 border-danger rounded-3 mb-4">
+            <div class="card-header bg-danger">
                 <h3 class="text-center mb-4 fw-bold">Matriculacion de @estudiante.NombreCompleto</h3>
             </div>
             <div class="card-body">
                 <div class="row align-items-center">
-                    <div class="col-md-8">
+                    <div class="col">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label asp-for="EstudianteId" class="control-label"></label>
@@ -53,7 +53,7 @@
         </div>
         <div class="text-end">
             <button type="submit" class="btn btn-danger">Eliminar Matricula</button>
-            <a class="btn btn-secondary me-2" asp-controller="Matriculas" asp-action="Index">Regresar</a>
+            <a class="btn btn-secondary mx-2" asp-controller="Matriculas" asp-action="Index">Regresar</a>
         </div>
     </div>
 </form>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kSeHgTnbPhbLXUqrWlLkx6Du9wnlvEWL4mQdFiXF230=",
+  "Hash": "PulzZ9gnSuc9qavDWT/o6OxMIGz/gnmJ4EAcklXioJY=",
   "Source": "SIGES_INDEL",
   "BasePath": "_content/SIGES_INDEL",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "sz07hq6i2z",
+      "Integrity": "OMY5UqEQQ7OcooT8uLPsKXgPeD66gsy10Ui2Mtp05TE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -141,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\default-avatar.png"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\fondo.svg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/fondo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zj5rp3wvip",
+      "Integrity": "IUZKF11aBBDEn1eGegQkPfT/HWqJjUPHQJ0F84UYGsM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fondo.svg"
     },
     {
       "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\js\\site.js",
@@ -1363,51 +1384,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 00:55:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1418,7 +1394,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "618"
         },
         {
           "Name": "Content-Type",
@@ -1426,11 +1402,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"OMY5UqEQQ7OcooT8uLPsKXgPeD66gsy10Ui2Mtp05TE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Oct 2025 00:55:48 GMT"
+          "Value": "Mon, 27 Oct 2025 02:02:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1440,7 +1416,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-OMY5UqEQQ7OcooT8uLPsKXgPeD66gsy10Ui2Mtp05TE="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.sz07hq6i2z.css",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OMY5UqEQQ7OcooT8uLPsKXgPeD66gsy10Ui2Mtp05TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Oct 2025 02:02:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sz07hq6i2z"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OMY5UqEQQ7OcooT8uLPsKXgPeD66gsy10Ui2Mtp05TE="
         }
       ]
     },
@@ -1687,6 +1708,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-x6p9757C/kV+sLXwwGRv+nekXDqehXdHlzwJaWh41cs="
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo.svg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\fondo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUZKF11aBBDEn1eGegQkPfT/HWqJjUPHQJ0F84UYGsM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Oct 2025 01:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IUZKF11aBBDEn1eGegQkPfT/HWqJjUPHQJ0F84UYGsM="
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo.zj5rp3wvip.svg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\fondo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUZKF11aBBDEn1eGegQkPfT/HWqJjUPHQJ0F84UYGsM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Oct 2025 01:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zj5rp3wvip"
+        },
+        {
+          "Name": "label",
+          "Value": "images/fondo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IUZKF11aBBDEn1eGegQkPfT/HWqJjUPHQJ0F84UYGsM="
         }
       ]
     },

@@ -22,7 +22,7 @@ namespace SIGES_INDEL.Controllers
 		[AllowAnonymous]
 		public IActionResult Registro()
 		{
-			ViewData["Docentes"] = _context.TDocentes.ToList(); // para dropdown
+			ViewData["Docentes"] = _context.TDocentes.ToList();
 			return View();
 		}
 
@@ -34,7 +34,6 @@ namespace SIGES_INDEL.Controllers
 
 			if (!ModelState.IsValid)
 			{
-				Console.WriteLine("❌ Modelo no válido.");
 				return View(modelo);
 			}
 
@@ -42,25 +41,16 @@ namespace SIGES_INDEL.Controllers
 			{
 				Email = modelo.Email,
 				UserName = modelo.Email,
-				DocenteId = modelo.DocenteId  // puede ser null si no aplica
+				DocenteId = modelo.DocenteId 
 			};
 
 			var resultado = await _userManager.CreateAsync(usuario, modelo.Password);
 
 			if (resultado.Succeeded)
 			{
-				Console.WriteLine("✅ Usuario creado correctamente");
 				await _signInManager.SignInAsync(usuario, isPersistent: true);
 				return RedirectToAction("Index", "Home");
 			}
-
-			// 🔥 Mostrar los errores en pantalla y consola
-			foreach (var error in resultado.Errors)
-			{
-				Console.WriteLine($"Error: {error.Description}");
-				ModelState.AddModelError(string.Empty, error.Description);
-			}
-
 			return View(modelo);
 		}
 
@@ -74,15 +64,14 @@ namespace SIGES_INDEL.Controllers
 			if (!ModelState.IsValid)
 				return View(modelo);
 
-			await _signInManager.SignOutAsync(); // Evita sesiones previas
+			await _signInManager.SignOutAsync();
 
 			var resultado = await _signInManager.PasswordSignInAsync(
 				modelo.Email, modelo.Password, modelo.Recuerdame, lockoutOnFailure: false);
 
 			if (resultado.Succeeded)
 			{
-				Console.WriteLine("✅ Inicio de sesión exitoso");
-				return RedirectToAction("Index", "Home"); // cambiá "Menu" por Home si esa es tu vista principal
+				return RedirectToAction("Index", "Home");
 			}
 
 			if (resultado.IsLockedOut)
