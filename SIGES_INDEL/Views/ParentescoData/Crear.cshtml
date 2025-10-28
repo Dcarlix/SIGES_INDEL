@@ -1,0 +1,32 @@
+﻿@model SIGES_INDEL.Models.Complementos.Parentesco
+@{
+    ViewData["Title"] = "Agregar Parentesco";
+}
+<form asp-action="Crear">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Agrega un Parentesco</h3>
+        <div class="card shadow border-2 border-success rounded-3 mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label asp-for="Parentescos" class="control-label"></label>
+                                <input asp-for="Parentescos" class="form-control" />
+                                <span asp-validation-for="Parentescos" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">Agregar Parentesco</button>
+            <a class="btn btn-secondary mx-2" asp-controller="ParentescoData" asp-action="Index">Cancelar</a>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

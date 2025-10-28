@@ -22,6 +22,15 @@ namespace SIGES_INDEL.Datos.Repositorios
 		{
 			return await ContextoDatos.TEstados.ToListAsync();
 		}
+		public async Task<IEnumerable> ListarGeneros()
+		{
+			return await ContextoDatos.TGenero.ToListAsync();
+		}
+
+		public async Task<IEnumerable> ListarDiscapacidades()
+		{
+			return await ContextoDatos.TDiscapacidades.ToListAsync();
+		}
 
 		public async Task<IEnumerable> ListarEstadoCivil()
 		{

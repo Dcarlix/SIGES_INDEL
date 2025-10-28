@@ -72,6 +72,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtZXJpdG9zXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DiscapacidadesData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2FwYWNpZGFkZXNEYXRhXEJvcnJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DiscapacidadesData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2FwYWNpZGFkZXNEYXRhXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DiscapacidadesData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2FwYWNpZGFkZXNEYXRhXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DiscapacidadesData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2FwYWNpZGFkZXNEYXRhXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/DiscapacidadesData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2FwYWNpZGFkZXNEYXRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Docentes/Borrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZXNcQm9ycmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +112,46 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoCivilData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvQ2l2aWxEYXRhXEJvcnJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoCivilData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvQ2l2aWxEYXRhXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoCivilData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvQ2l2aWxEYXRhXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoCivilData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvQ2l2aWxEYXRhXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoCivilData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvQ2l2aWxEYXRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvRGF0YVxCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvRGF0YVxDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvRGF0YVxEZXRhbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvRGF0YVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EstadoData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvRGF0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Estudiantes/Borrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZXNcQm9ycmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -110,6 +170,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Estudiantes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EtniaData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRuaWFEYXRhXEJvcnJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EtniaData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRuaWFEYXRhXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EtniaData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRuaWFEYXRhXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EtniaData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRuaWFEYXRhXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/EtniaData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRuaWFEYXRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Expedientes/Index.cshtml]
@@ -214,6 +294,46 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Meritos/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyaXRvc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/NacionalidadesData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkZXNEYXRhXEJvcnJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/NacionalidadesData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkZXNEYXRhXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/NacionalidadesData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkZXNEYXRhXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/NacionalidadesData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkZXNEYXRhXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/NacionalidadesData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkZXNEYXRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/ParentescoData/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50ZXNjb0RhdGFcQm9ycmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/ParentescoData/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50ZXNjb0RhdGFcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/ParentescoData/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50ZXNjb0RhdGFcRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/ParentescoData/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50ZXNjb0RhdGFcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/ParentescoData/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50ZXNjb0RhdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MINEDUCYT/Desktop/TerceroSoft/Cafe_2025/SIGES_INDEL/SIGES_INDEL/Views/Shared/Error.cshtml]

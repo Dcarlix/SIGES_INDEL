@@ -44,7 +44,7 @@ namespace SIGES_INDEL.Datos.Repositorios
 			await ContextoDatos.SaveChangesAsync();
 		}
 
-		public async Task<IEnumerable> Index(int busqueda)
+		public async Task<IEnumerable> Index(string busqueda)
 		{
 			var _estudiantes = ContextoDatos.TEstudiantes
 										.Include(e => e.Matriculas)
@@ -53,7 +53,7 @@ namespace SIGES_INDEL.Datos.Repositorios
 										.OrderBy(e => e.NombreCompleto)
 										.AsQueryable();
 
-			if (busqueda != 0)
+			if (busqueda != null)
 			{
 				_estudiantes = _estudiantes.Where(e => e.NIE == busqueda);
 			}

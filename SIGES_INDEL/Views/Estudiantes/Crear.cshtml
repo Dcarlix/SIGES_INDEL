@@ -1,5 +1,9 @@
 ﻿@model SIGES_INDEL.Models.Estudiante
 @{
+     List<SIGES_INDEL.Models.Complementos.Genero> xgenero = ViewBag.generos as List<SIGES_INDEL.Models.Complementos.Genero>;
+
+    List<SIGES_INDEL.Models.Complementos.Discapacidades> xdiscapacidades = ViewBag.discapacidades as List<SIGES_INDEL.Models.Complementos.Discapacidades>;
+
     List<SIGES_INDEL.Models.Complementos.Nacionalidades> xnacionalidades = ViewBag.nacionalidades as List<SIGES_INDEL.Models.Complementos.Nacionalidades>;
 
     List<SIGES_INDEL.Models.Complementos.EstadoCivil> xestadosCiviles = ViewBag.estadoCivil as List<SIGES_INDEL.Models.Complementos.EstadoCivil>;
@@ -14,7 +18,7 @@
 <form asp-action="Crear" enctype="multipart/form-data">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Matricula a un Alumno</h3>
-        <small class="text-center">Campos con * son opcionales</small>
+        <small class="text-center">Campos con * son opcionales, Numeros y DUI CON GUION</small>
         <div class="card shadow border-2 border-info rounded-3 mb-4">
             <div class="card-header border-info">
                 <h3 class="text-center mb-4 fw-bold">Datos Personales</h3>
@@ -33,7 +37,7 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label asp-for="NIE" class="control-label"></label>
-                                <input asp-for="NIE" type="number" class="form-control" placeholder="Digite el NIE" />
+                                <input asp-for="NIE" class="form-control" placeholder="Digite el NIE" />
                                 <span asp-validation-for="NIE" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
@@ -41,15 +45,26 @@
                                 <input asp-for="NombreCompleto" class="form-control" placeholder="Escriba el nombre completo" />
                                 <span asp-validation-for="NombreCompleto" class="text-danger"></span>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label asp-for="FechaNacimiento" class="control-label"></label>
                                 <input asp-for="FechaNacimiento" type="date" class="form-control" placeholder="Fecha de Nacimiento" />
                                 <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label asp-for="Edad" class="control-label"></label>
-                                <input asp-for="Edad" type="number" class="form-control" placeholder="Digite edad"/>
+                                <input asp-for="Edad" type="number" class="form-control" placeholder="Digite edad" />
                                 <span asp-validation-for="Edad" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="GeneroId" class="control-label"></label>
+                                <select asp-for="GeneroId" class="form-control">
+                                    <option selected value="">Genero</option>
+                                    @foreach (var item in xgenero)
+                                    {
+                                        <option value="@item.Id">@item.Generos</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="GeneroId" class="text-danger"></span>
                             </div>
                             <div class="col-md-12">
                                 <label asp-for="Direccion" class="control-label"></label>
@@ -57,8 +72,15 @@
                                 <span asp-validation-for="Direccion" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
-                                <label asp-for="Discapacidades" class="control-label"></label>
-                                <input asp-for="Discapacidades" class="form-control" placeholder="Discapacidades" />
+                                <label asp-for="DiscapacidadesId" class="control-label"></label>
+                                <select asp-for="DiscapacidadesId" class="form-control">
+                                    <option selected value="">Discapacidades</option>
+                                    @foreach (var item in xdiscapacidades)
+                                    {
+                                        <option value="@item.Id">@item.Discapacidad</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="DiscapacidadesId" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
                                 <label asp-for="EstadoCivilId" class="control-label"></label>
@@ -95,7 +117,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label asp-for="Telefono" class="control-label"></label>
-                                <input asp-for="Telefono" type="number" class="form-control" placeholder="Telefono Celular" />
+                                <input asp-for="Telefono" class="form-control" placeholder="Telefono Celular" />
                                 <span asp-validation-for="Telefono" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
@@ -121,12 +143,12 @@
                     </div>
                     <div class="col-md-6">
                         <label asp-for="DUI" class="control-label"></label>
-                        <input asp-for="DUI" type="number" class="form-control" placeholder="DUI Del representante" />
+                        <input asp-for="DUI" class="form-control" placeholder="DUI Del representante" />
                         <span asp-validation-for="DUI" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
                         <label asp-for="TelefonoRepresentante" class="control-label"></label>
-                        <input asp-for="TelefonoRepresentante" type="number" class="form-control" placeholder="Telefono Del representante" />
+                        <input asp-for="TelefonoRepresentante" class="form-control" placeholder="Telefono Del representante" />
                         <span asp-validation-for="TelefonoRepresentante" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
@@ -142,7 +164,7 @@
                     </div>
                     <div class="col-md-6">
                         <label asp-for="TelefonoTrabajoRepresentante" class="control-label"></label>
-                        <input asp-for="TelefonoTrabajoRepresentante" type="number" class="form-control" placeholder="Telefono de trabajo Del representante" />
+                        <input asp-for="TelefonoTrabajoRepresentante" class="form-control" placeholder="Telefono de trabajo Del representante" />
                     </div>
                 </div>
             </div>

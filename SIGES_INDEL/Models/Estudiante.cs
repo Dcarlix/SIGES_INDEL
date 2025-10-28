@@ -14,7 +14,8 @@ namespace SIGES_INDEL.Models
 		
 		[Display(Name = "NIE")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		public int NIE { get; set; }
+		[StringLength(8, ErrorMessage = "El NIE debe tener 8 Digitos.")]
+		public string NIE { get; set; }
 
 		[Display(Name = "Nombre Completo")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
@@ -38,14 +39,24 @@ namespace SIGES_INDEL.Models
 
 		[Display(Name ="Numero Telefonico")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		public int Telefono { get; set; }
+		[StringLength(9, MinimumLength = 8, ErrorMessage = "El numero debe ser de 8 Digitos")]
+		public string Telefono { get; set; }
 
 		[Display(Name = "Direccion de Vivienda")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
 		public string Direccion { get; set; }
 
-		[Display(Name = "Discapacidades *")]
-		public string Discapacidades { get; set; }
+		//Relacion con tabla Genero
+		[Display(Name = "Genero")]
+		public int GeneroId { get; set; }
+		[Display(Name = "Genero")]
+		public Genero Genero { get; set; }
+
+		//Relacion con tabla Discapacidades
+		[Display(Name = "Discapacidades")]
+		public int DiscapacidadesId { get; set; }
+		[Display(Name = "Discapacidades")]
+		public Discapacidades Discapacidades { get; set; }
 
 		[Display(Name = "Trabajo *")]
 		public string Trabajo { get; set; }
@@ -75,16 +86,19 @@ namespace SIGES_INDEL.Models
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
 		public string NombreCompletoRepresentante { get; set; }
 
-		[Display(Name = "DUI del Representante")]
+		[Display(Name = "DUI del Representante (Con guion)")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		public int DUI { get; set; }
+		[StringLength(10, ErrorMessage = "El DUI son 9 numeros y Con el Guion")]
+		public string DUI { get; set; }
 
 		[Display(Name = "Numero Telefonico del Representante")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		public int TelefonoRepresentante { get; set; }
+		[StringLength(9, MinimumLength = 8, ErrorMessage = "El numero debe ser de 8 Digitos")]
+		public string TelefonoRepresentante { get; set; }
 
 		[Display(Name = "Numero Telefonico de Trabajo del Representante *")]
-		public int TelefonoTrabajoRepresentante { get; set; }
+		[StringLength(9, MinimumLength = 8, ErrorMessage = "El numero debe ser de 8 Digitos")]
+		public string TelefonoTrabajoRepresentante { get; set; }
 
 		//Relacion con tabla Parentesco
 		[Display(Name = "Tipo de Parentesco")]

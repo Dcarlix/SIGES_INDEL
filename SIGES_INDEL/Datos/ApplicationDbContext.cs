@@ -27,6 +27,8 @@ namespace SIGES_INDEL.Datos
 		public DbSet<Meritos> TMeritos { get; set; }
 		public DbSet<Nacionalidades> TNacionalidades { get; set; }
 		public DbSet<Parentesco> TParentescos { get; set; }
+		public DbSet<Discapacidades> TDiscapacidades { get; set; }
+		public DbSet<Genero> TGenero { get; set; }
 		//Tablas de Registros
 		public DbSet<ActasAsignadas> TActasAsignadas { get; set; }
 		public DbSet<DemeritosAsignados> TDemeritosAsignados { get; set; }
@@ -51,6 +53,22 @@ namespace SIGES_INDEL.Datos
 				.WithOne()
 				.HasForeignKey<ApplicationUser>(u => u.DocenteId)
 				.OnDelete(DeleteBehavior.Restrict);
+			//Siembra de Datos
+			builder.Entity<Discapacidades>().HasData(
+				new Discapacidades { Id = 1, Discapacidad = "No Posee" });
+			builder.Entity<Estado>().HasData(
+				new Estado { Id = 1, Estados = "Activo" });
+			builder.Entity<EstadoCivil>().HasData(
+				new EstadoCivil { Id = 1, Estado = "Soltero/a" });
+			builder.Entity<Etnia>().HasData(
+				new Etnia { Id = 1, Etnias = "No Aplica" });
+			builder.Entity<Nacionalidades>().HasData(
+				new Nacionalidades { Id = 1, Nacionalidad = "Salvadoreño/a" });
+			builder.Entity<Parentesco>().HasData(
+				new Parentesco { Id = 1, Parentescos = "Representante" });
+			builder.Entity<Genero>().HasData(
+				new Genero { Id = 1, Generos = "Masculino" },
+				new Genero { Id = 2, Generos = "Femenino" });
 		}
 
 	}

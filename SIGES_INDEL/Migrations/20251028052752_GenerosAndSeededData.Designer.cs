@@ -12,8 +12,8 @@ using SIGES_INDEL.Datos;
 namespace SIGES_INDEL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251026020602_PorfavorYaNoQuieroRepetirEsto")]
-    partial class PorfavorYaNoQuieroRepetirEsto
+    [Migration("20251028052752_GenerosAndSeededData")]
+    partial class GenerosAndSeededData
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,6 +247,30 @@ namespace SIGES_INDEL.Migrations
                     b.ToTable("TDemertios");
                 });
 
+            modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Discapacidades", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Discapacidad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TDiscapacidades");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Discapacidad = "No Posee"
+                        });
+                });
+
             modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Estado", b =>
                 {
                     b.Property<int>("Id")
@@ -262,6 +286,13 @@ namespace SIGES_INDEL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TEstados");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Estados = "Activo"
+                        });
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Complementos.EstadoCivil", b =>
@@ -279,6 +310,13 @@ namespace SIGES_INDEL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TEstadoCivil");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Estado = "Soltero/a"
+                        });
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Etnia", b =>
@@ -296,6 +334,42 @@ namespace SIGES_INDEL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TEtnias");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Etnias = "No Aplica"
+                        });
+                });
+
+            modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Genero", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Generos")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TGenero");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Generos = "Masculino"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Generos = "Femenino"
+                        });
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Grados", b =>
@@ -359,6 +433,13 @@ namespace SIGES_INDEL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TNacionalidades");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nacionalidad = "Salvadoreño/a"
+                        });
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Parentesco", b =>
@@ -376,6 +457,13 @@ namespace SIGES_INDEL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TParentescos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Parentescos = "Representante"
+                        });
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Docente", b =>
@@ -392,8 +480,10 @@ namespace SIGES_INDEL.Migrations
                     b.Property<byte[]>("ImagenDocente")
                         .HasColumnType("varbinary(max)");
 
-                    b.Property<int>("NIP")
-                        .HasColumnType("int");
+                    b.Property<string>("NIP")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.Property<string>("NombreCompleto")
                         .IsRequired()
@@ -415,15 +505,17 @@ namespace SIGES_INDEL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("DUI")
-                        .HasColumnType("int");
+                    b.Property<string>("DUI")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Direccion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discapacidades")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("DiscapacidadesId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Edad")
                         .HasColumnType("int");
@@ -437,11 +529,16 @@ namespace SIGES_INDEL.Migrations
                     b.Property<DateOnly>("FechaNacimiento")
                         .HasColumnType("date");
 
+                    b.Property<int>("GeneroId")
+                        .HasColumnType("int");
+
                     b.Property<byte[]>("ImagenEstudiante")
                         .HasColumnType("varbinary(max)");
 
-                    b.Property<int>("NIE")
-                        .HasColumnType("int");
+                    b.Property<string>("NIE")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.Property<int>("NacionalidadId")
                         .HasColumnType("int");
@@ -457,23 +554,32 @@ namespace SIGES_INDEL.Migrations
                     b.Property<int>("ParentescoId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Telefono")
-                        .HasColumnType("int");
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)");
 
-                    b.Property<int>("TelefonoRepresentante")
-                        .HasColumnType("int");
+                    b.Property<string>("TelefonoRepresentante")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)");
 
-                    b.Property<int>("TelefonoTrabajoRepresentante")
-                        .HasColumnType("int");
+                    b.Property<string>("TelefonoTrabajoRepresentante")
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)");
 
                     b.Property<string>("Trabajo")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("DiscapacidadesId");
+
                     b.HasIndex("EstadoCivilId");
 
                     b.HasIndex("EtniaId");
+
+                    b.HasIndex("GeneroId");
 
                     b.HasIndex("NacionalidadId");
 
@@ -560,10 +666,7 @@ namespace SIGES_INDEL.Migrations
                     b.Property<string>("Comentarios")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DemeritoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("DemeritosId")
+                    b.Property<int>("DemeritosId")
                         .HasColumnType("int");
 
                     b.Property<int>("DocenteId")
@@ -727,6 +830,12 @@ namespace SIGES_INDEL.Migrations
 
             modelBuilder.Entity("SIGES_INDEL.Models.Estudiante", b =>
                 {
+                    b.HasOne("SIGES_INDEL.Models.Complementos.Discapacidades", "Discapacidades")
+                        .WithMany()
+                        .HasForeignKey("DiscapacidadesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("SIGES_INDEL.Models.Complementos.EstadoCivil", "EstadoCivil")
                         .WithMany()
                         .HasForeignKey("EstadoCivilId")
@@ -736,6 +845,12 @@ namespace SIGES_INDEL.Migrations
                     b.HasOne("SIGES_INDEL.Models.Complementos.Etnia", "Etnia")
                         .WithMany()
                         .HasForeignKey("EtniaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SIGES_INDEL.Models.Complementos.Genero", "Genero")
+                        .WithMany()
+                        .HasForeignKey("GeneroId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -751,9 +866,13 @@ namespace SIGES_INDEL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Discapacidades");
+
                     b.Navigation("EstadoCivil");
 
                     b.Navigation("Etnia");
+
+                    b.Navigation("Genero");
 
                     b.Navigation("Nacionalidad");
 
@@ -771,7 +890,7 @@ namespace SIGES_INDEL.Migrations
                     b.HasOne("SIGES_INDEL.Models.Estudiante", "Estudiante")
                         .WithMany("Matriculas")
                         .HasForeignKey("EstudianteId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Complementos.Grados", "Grados")
@@ -810,7 +929,9 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Complementos.Demeritos", "Demeritos")
                         .WithMany()
-                        .HasForeignKey("DemeritosId");
+                        .HasForeignKey("DemeritosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
                         .WithMany()

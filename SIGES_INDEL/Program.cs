@@ -27,18 +27,28 @@ builder.Services.AddControllersWithViews(opciones =>
 builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
 opciones.UseSqlServer(builder.Configuration.GetConnectionString("Cnn")));
 
+//Servicios Pricipales
 builder.Services.AddScoped<IRepositorioEstudiantes, RepositorioEstudiantes>();
 builder.Services.AddScoped<IRepositorioUtilidades, RepositorioUtilidades>();
 builder.Services.AddScoped<IRepositorioMatriculas, RepositorioMatriculas>();
 builder.Services.AddScoped<IRepositorioDocentes, RepositorioDocentes>();
+//Servicio de Expediente
 builder.Services.AddScoped<IRepositorioExpedientes, RepositorioExpedientes>();
 builder.Services.AddScoped<IRepositorioMeritos, RepositorioMeritos>();
 builder.Services.AddScoped<IRepositorioDemeritos, RepositorioDemeritos>();
 builder.Services.AddScoped<IRepositorioFichas, RepositorioFichas>();
 builder.Services.AddScoped<IRepositorioActas, RepositorioActas>();
+//Servicio de Data
 builder.Services.AddScoped<IRepositorioGrados, RepositorioGrados>();
 builder.Services.AddScoped<IRepositorioMeritosData, RepositorioMeritosData>();
 builder.Services.AddScoped<IRepositorioDemeritosData, RepositorioDemeritosData>();
+builder.Services.AddScoped<IRepositorioEstadoCivilData, RepositorioEstadoCivilData>();
+builder.Services.AddScoped<IRepositorioEstadoData, RepositorioEstadoData>();
+builder.Services.AddScoped<IRepositorioEtniaData, RepositorioEtniaData>();
+builder.Services.AddScoped<IRepositorioNacionalidadesData, RepositorioNacionalidadesData>();
+builder.Services.AddScoped<IRepositorioParentescoData, RepositorioParentescoData>();
+builder.Services.AddScoped<IRepositorioDiscapacidadesData, RepositorioDiscapacidadesData>();
+
 
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(opciones =>
@@ -95,7 +105,6 @@ using (var scope = app.Services.CreateScope())
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

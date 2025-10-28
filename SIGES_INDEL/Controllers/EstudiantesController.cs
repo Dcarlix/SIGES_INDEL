@@ -16,7 +16,7 @@ namespace SIGES_INDEL.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> Index(int Buscar)
+		public async Task<IActionResult> Index(string Buscar)
 		{
 			ViewData["Buscar"] = Buscar;
 
@@ -26,6 +26,8 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Crear()
 		{
+			ViewBag.generos = await _IrepositorioUtilidades.ListarGeneros();
+			ViewBag.discapacidades = await _IrepositorioUtilidades.ListarDiscapacidades();
 			ViewBag.nacionalidades = await _IrepositorioUtilidades.ListarNacionalidades();
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();
@@ -52,7 +54,8 @@ namespace SIGES_INDEL.Controllers
 				TempData["tipo"] = "success";
 				return RedirectToAction("Crear", "Matriculas", new { id = estudiante.Id });
 			}
-
+			ViewBag.generos = await _IrepositorioUtilidades.ListarGeneros();
+			ViewBag.discapacidades = await _IrepositorioUtilidades.ListarDiscapacidades();
 			ViewBag.nacionalidades = await _IrepositorioUtilidades.ListarNacionalidades();
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();
@@ -64,6 +67,8 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Editar(int? id)
 		{
+			ViewBag.generos = await _IrepositorioUtilidades.ListarGeneros();
+			ViewBag.discapacidades = await _IrepositorioUtilidades.ListarDiscapacidades();
 			ViewBag.nacionalidades = await _IrepositorioUtilidades.ListarNacionalidades();
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();
@@ -99,7 +104,8 @@ namespace SIGES_INDEL.Controllers
 				TempData["tipo"] = "success";
 				return RedirectToAction(nameof(Index));
 			}
-
+			ViewBag.generos = await _IrepositorioUtilidades.ListarGeneros();
+			ViewBag.discapacidades = await _IrepositorioUtilidades.ListarDiscapacidades();
 			ViewBag.nacionalidades = await _IrepositorioUtilidades.ListarNacionalidades();
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();
@@ -111,6 +117,8 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Detalle(int? id)
 		{
+			ViewBag.generos = await _IrepositorioUtilidades.ListarGeneros();
+			ViewBag.discapacidades = await _IrepositorioUtilidades.ListarDiscapacidades();
 			ViewBag.nacionalidades = await _IrepositorioUtilidades.ListarNacionalidades();
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();
@@ -130,6 +138,8 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Borrar(int? id)
 		{
+			ViewBag.generos = await _IrepositorioUtilidades.ListarGeneros();
+			ViewBag.discapacidades = await _IrepositorioUtilidades.ListarDiscapacidades();
 			ViewBag.nacionalidades = await _IrepositorioUtilidades.ListarNacionalidades();
 			ViewBag.estadoCivil = await _IrepositorioUtilidades.ListarEstadoCivil();
 			ViewBag.etnias = await _IrepositorioUtilidades.ListarEtnia();

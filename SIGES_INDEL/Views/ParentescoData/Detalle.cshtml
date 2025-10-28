@@ -1,0 +1,30 @@
+﻿@model SIGES_INDEL.Models.Complementos.Parentesco
+@{
+    ViewData["Title"] = "Informacion Parentesco";
+}
+<form asp-action="Detalle">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Informacion del Parentesco</h3>
+        <div class="card shadow border-2 border-info rounded-3 mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label asp-for="Parentescos" class="control-label"></label>
+                                <input asp-for="Parentescos" class="form-control" disabled readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <a class="btn btn-secondary mx-2" asp-controller="ParentescoData" asp-action="Index">Regresar</a>
+        </div>
+    </div>
+</form>
+
+
+
+

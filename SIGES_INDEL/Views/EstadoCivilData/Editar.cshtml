@@ -1,0 +1,33 @@
+﻿@model SIGES_INDEL.Models.Complementos.EstadoCivil
+@{
+    ViewData["Title"] = "Editar Estado Civil";
+}
+<form asp-action="Editar">
+    <div class="container py-4">
+        <h3 class="text-center mb-4 fw-bold">Edita el Estado Civil</h3>
+        <div class="card shadow border-2 border-primary rounded-3 mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label asp-for="Estado" class="control-label"></label>
+                                <input asp-for="Estado" class="form-control" />
+                                <span asp-validation-for="Estado" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">Guardar Cambios</button>
+            <a class="btn btn-secondary mx-2" asp-controller="EstadoCivilData" asp-action="Index">Cancelar</a>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

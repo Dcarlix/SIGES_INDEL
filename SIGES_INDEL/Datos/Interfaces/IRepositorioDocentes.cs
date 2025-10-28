@@ -6,7 +6,7 @@ namespace SIGES_INDEL.Datos.Interfaces
 	public interface IRepositorioDocentes
 	{
 		//Contexto Bascio
-		public Task<IEnumerable> Index(int busqueda);
+		public Task<IEnumerable> Index(string busqueda);
 		public Task Crear(Docente docente);
 		public Task Actualizar(Docente docente);
 		public Task<Docente> Buscar(int? id);

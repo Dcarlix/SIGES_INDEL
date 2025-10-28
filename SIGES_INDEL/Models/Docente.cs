@@ -11,7 +11,8 @@ namespace SIGES_INDEL.Models
 		public int Id { get; set; }
 		[Display(Name = "NIP")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		public int NIP { get; set; }
+		[StringLength(8, ErrorMessage = "El NIP debe tener 8 Digitos.")]
+		public string NIP { get; set; }
 
 		[Display(Name = "Nombre Completo")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]

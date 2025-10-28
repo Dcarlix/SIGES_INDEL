@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SIGES_INDEL.Migrations
 {
     /// <inheritdoc />
-    public partial class PorfavorYaNoQuieroRepetirEsto : Migration
+    public partial class LaUltimaEsLaVencida : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -36,6 +36,19 @@ namespace SIGES_INDEL.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TDemertios", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TDiscapacidades",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Discapacidad = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TDiscapacidades", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -181,27 +194,33 @@ namespace SIGES_INDEL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NIE = table.Column<int>(type: "int", nullable: false),
+                    NIE = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
                     NombreCompleto = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagenEstudiante = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
                     FechaNacimiento = table.Column<DateOnly>(type: "date", nullable: false),
                     Edad = table.Column<int>(type: "int", nullable: false),
-                    Telefono = table.Column<int>(type: "int", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: false),
                     Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Discapacidades = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DiscapacidadesId = table.Column<int>(type: "int", nullable: false),
                     Trabajo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NacionalidadId = table.Column<int>(type: "int", nullable: false),
                     EstadoCivilId = table.Column<int>(type: "int", nullable: false),
                     EtniaId = table.Column<int>(type: "int", nullable: false),
                     NombreCompletoRepresentante = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DUI = table.Column<int>(type: "int", nullable: false),
-                    TelefonoRepresentante = table.Column<int>(type: "int", nullable: false),
-                    TelefonoTrabajoRepresentante = table.Column<int>(type: "int", nullable: false),
+                    DUI = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    TelefonoRepresentante = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: false),
+                    TelefonoTrabajoRepresentante = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: true),
                     ParentescoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TEstudiantes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TEstudiantes_TDiscapacidades_DiscapacidadesId",
+                        column: x => x.DiscapacidadesId,
+                        principalTable: "TDiscapacidades",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TEstudiantes_TEstadoCivil_EstadoCivilId",
                         column: x => x.EstadoCivilId,
@@ -298,8 +317,7 @@ namespace SIGES_INDEL.Migrations
                     FechaRegistro = table.Column<DateOnly>(type: "date", nullable: false),
                     EstudianteId = table.Column<int>(type: "int", nullable: false),
                     DocenteId = table.Column<int>(type: "int", nullable: false),
-                    DemeritoId = table.Column<int>(type: "int", nullable: false),
-                    DemeritosId = table.Column<int>(type: "int", nullable: true),
+                    DemeritosId = table.Column<int>(type: "int", nullable: false),
                     Comentarios = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -309,7 +327,8 @@ namespace SIGES_INDEL.Migrations
                         name: "FK_TDemeritosAsignados_TDemertios_DemeritosId",
                         column: x => x.DemeritosId,
                         principalTable: "TDemertios",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TDemeritosAsignados_TDocentes_DocenteId",
                         column: x => x.DocenteId,
@@ -379,7 +398,7 @@ namespace SIGES_INDEL.Migrations
                         column: x => x.EstudianteId,
                         principalTable: "TEstudiantes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TMatriculas_TGrados_GradosId",
                         column: x => x.GradosId,
@@ -586,6 +605,11 @@ namespace SIGES_INDEL.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_TEstudiantes_DiscapacidadesId",
+                table: "TEstudiantes",
+                column: "DiscapacidadesId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_TEstudiantes_EstadoCivilId",
                 table: "TEstudiantes",
                 column: "EstadoCivilId");
@@ -699,6 +723,9 @@ namespace SIGES_INDEL.Migrations
 
             migrationBuilder.DropTable(
                 name: "TDocentes");
+
+            migrationBuilder.DropTable(
+                name: "TDiscapacidades");
 
             migrationBuilder.DropTable(
                 name: "TEstadoCivil");

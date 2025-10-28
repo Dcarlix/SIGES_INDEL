@@ -6,7 +6,9 @@ namespace SIGES_INDEL.Datos.Interfaces
 	public interface IRepositorioUtilidades
 	{
 		public Task<IEnumerable> ListarDemeritos();
+		public Task<IEnumerable> ListarDiscapacidades();
 		public Task<IEnumerable> ListarEstado();
+		public Task<IEnumerable> ListarGeneros();
 		public Task<IEnumerable> ListarEstadoCivil();
 		public Task<IEnumerable> ListarEtnia();
 		public Task<IEnumerable> ListarGrados();
