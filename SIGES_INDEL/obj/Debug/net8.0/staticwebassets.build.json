@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8nqEwnuAVlF9OxdpUEK/VIMGpBC+NGvGmJFMJsyoMzQ=",
+  "Hash": "+XvF3+px7FnlkQtFN6xZ4jsIaIPlMz4T2zZXWIRb63g=",
   "Source": "SIGES_INDEL",
   "BasePath": "_content/SIGES_INDEL",
   "Mode": "Default",
@@ -183,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\default-avatar.png"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\estudiante.png",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/estudiante#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nefndeiys5",
+      "Integrity": "QY1pgis8wnfJ+FelytDSacAiGlsQbX/h83YWVX753Yk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\estudiante.png"
     },
     {
       "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\fondo.svg",
@@ -2019,6 +2040,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-x6p9757C/kV+sLXwwGRv+nekXDqehXdHlzwJaWh41cs="
+        }
+      ]
+    },
+    {
+      "Route": "images/estudiante.nefndeiys5.png",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\estudiante.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1369709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QY1pgis8wnfJ+FelytDSacAiGlsQbX/h83YWVX753Yk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 04:38:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nefndeiys5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/estudiante.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QY1pgis8wnfJ+FelytDSacAiGlsQbX/h83YWVX753Yk="
+        }
+      ]
+    },
+    {
+      "Route": "images/estudiante.png",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\estudiante.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1369709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QY1pgis8wnfJ+FelytDSacAiGlsQbX/h83YWVX753Yk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 04:38:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QY1pgis8wnfJ+FelytDSacAiGlsQbX/h83YWVX753Yk="
         }
       ]
     },

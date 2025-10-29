@@ -44,22 +44,29 @@
                                 @if (docente.ImagenDocente != null)
                                 {
                                     <img id="previewImagen" src="data:image/jpeg;base64,@Convert.ToBase64String(docente.ImagenDocente)"
-                                         alt="Imagen de @docente.NombreCompleto"
-                                         class="img-thumbnail m-2"
-                                         style="max-width: 200px; height: 250px; object-fit: cover; border-radius: 10px;" />
+                                    alt="Imagen de @docente.NombreCompleto"
+                                    class="img-thumbnail m-2"
+                                    style="max-width: 200px; height: 250px; object-fit: cover; border-radius: 10px;" />
                                 }
                                 else
                                 {
                                     <img id="previewImagen" src="~/images/default-avatar.png"
-                                         alt="Previsualización"
-                                         class="img-thumbnail m-2"
-                                         style="max-width: 200px; height: 250px; object-fit: cover; border-radius: 10px;" />
+                                    alt="Previsualización"
+                                    class="img-thumbnail m-2"
+                                    style="max-width: 200px; height: 250px; object-fit: cover; border-radius: 10px;" />
                                 }
                             </div>
                             <div class="col">
                                 <div class="my-4 text-start">
                                     <p class="fw-semibold fs-5">Nombre: @Html.DisplayFor(t => docente.NombreCompleto)</p>
-                                    <p class="fw-semibold fs-5">Grado que coordina: @Html.DisplayFor(t => docente.Grados.Abreviacion)</p>
+                                    @if (docente.GradosId != null)
+                                    {
+                                        <p class="fw-semibold fs-5">Grado que coordina: @Html.DisplayFor(t => docente.Grados.Abreviacion)</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="fw-semibold fs-5">No Coordina Grado</p>
+                                    }
                                 </div>
 
                                 <div class="d-flex justify-content-start gap-3">

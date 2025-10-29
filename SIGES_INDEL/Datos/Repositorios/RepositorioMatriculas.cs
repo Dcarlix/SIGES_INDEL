@@ -13,17 +13,17 @@ namespace SIGES_INDEL.Datos.Repositorios
 		{
 			ContextoDatos = applicationDbContext;
 		}
-		public async Task<IEnumerable<Matriculas>> Index(int busqueda)
+		public async Task<IEnumerable<Matriculas>> Index(string busqueda)
 		{
 			var query = ContextoDatos.TMatriculas
-							.Include(t => t.Grados)
-							.Include(t => t.Estado)
-							.Include(t => t.Estudiante)
-							.AsNoTracking()
-							.AsQueryable();
+				   .Include(t => t.Grados)
+				   .Include(t => t.Estado)
+				   .Include(t => t.Estudiante)
+				   .AsNoTracking()
+				   .AsQueryable();
 
-			if (busqueda != 0)
-				query = query.Where(a => a.EstudianteId == busqueda);
+			if (!string.IsNullOrEmpty(busqueda))
+				query = query.Where(a => a.Estudiante.NIE == busqueda);
 
 			return await query
 				.OrderBy(a => a.EstudianteId)

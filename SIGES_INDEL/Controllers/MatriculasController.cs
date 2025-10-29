@@ -16,7 +16,7 @@ namespace SIGES_INDEL.Controllers
 			_IrepositorioUtilidades = repositorioUtilidades;
 		}
 		[HttpGet]
-		public async Task<IActionResult> Index(int Buscar)
+		public async Task<IActionResult> Index(string Buscar)
         {
 			ViewData["Buscar"] = Buscar;
 

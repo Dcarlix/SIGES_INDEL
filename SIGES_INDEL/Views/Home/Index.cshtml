@@ -2,6 +2,139 @@
     ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bienvenido a SIGES INDEL</h1>
+<div class="container py-3">
+    <div class="text-center mb-4">
+        <h1 class="fw-bold display-5 text-dark mb-3">Bienvenido a <span class="text-dark">SIGES INDEL</span></h1>
+        <p class="fs-5">
+            Bienvenido a la adaptacion del sistema estudiantil SIGES para el Instituto Nacional Canton Lourdes Hecho por estudiantes. Este sistema de gestión educativa está diseñado para facilitar el control académico y administrativo
+            de los estudiantes, docentes y matrículas. Desde aquí podrás realizar acciones como registrar nuevos estudiantes,
+            gestionar matrículas, consultar información y mantener actualizados los datos institucionales.
+        </p>
+        <div class="text-center my-4">
+            <img src="~/images/estudiante.png" alt="Estudiante dando la bienvenida"
+                 class="img-fluid"
+                 style="max-width: 250px; height: auto;" />
+        </div>
+        <p class="fs-5">
+            A continuación encontrarás una guía rápida con las preguntas más frecuentes sobre el uso del sistema.
+            Explora cada apartado para conocer cómo realizar las principales acciones dentro de la plataforma.
+        </p>
+    </div>
+    <div class="accordion shadow-sm border rounded-3" id="accordionFlushExample" style="background-color: #f8fbff;">
+
+        <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button fw-semibold text-primary bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="flush-collapseOne">
+                     Cómo agregar y matricular a un estudiante
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-secondary">
+                    Para poder agregar a un nuevo estudiante, dirígete a la opción <strong>"Acciones"</strong>
+                    y selecciona <strong>"Agregar y matricular estudiante"</strong>. Ingresa los datos solicitados
+                    y presiona <em>Guardar</em> para completar la matrícula.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed fw-semibold text-primary bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                     Cómo buscar estudiantes registrados
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-secondary">
+                    Dirígete a la sección <strong>"Estudiantes"</strong>. Utiliza el cuadro de búsqueda ingresando
+                    el NIE del estudiante y presiona <em>Buscar</em> para ver la información correspondiente.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed fw-semibold text-primary bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                     Cómo ver y buscar matrículas
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-secondary">
+                    En la pestaña <strong>"Matrículas"</strong>, ingresa el NIE de un estudiante matriculado
+                    y presiona <em>Buscar</em>. Se mostrará su información de matrícula registrada en el sistema.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed fw-semibold text-primary bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour">
+                     Cómo registrarse como docente
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-secondary">
+                    Para obtener acceso como docente, solicita tu cuenta al director de la institución,
+                    quien gestionará la creación del usuario con el área administrativa.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed fw-semibold text-primary bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive">
+                     Cómo modificar los datos de un estudiante
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-secondary">
+                    Busca al estudiante por su NIE, presiona el botón <strong>"Modificar"</strong>
+                    y podrás editar la información necesaria antes de guardar los cambios.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed fw-semibold text-primary bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix">
+                     Cómo modificar una matrícula
+                </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-secondary">
+                    Desde la sección <strong>"Matrículas"</strong>, busca al estudiante mediante su NIE
+                    y selecciona <strong>"Editar"</strong> para modificar los datos de su registro.
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

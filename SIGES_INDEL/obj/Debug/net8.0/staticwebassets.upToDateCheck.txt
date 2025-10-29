@@ -4,6 +4,7 @@ wwwroot\images\carlos.jpeg
 wwwroot\images\control.jpg
 wwwroot\images\davi.jpeg
 wwwroot\images\default-avatar.png
+wwwroot\images\estudiante.png
 wwwroot\images\fondo.svg
 wwwroot\images\hugo.jpeg
 wwwroot\images\joe.jpeg

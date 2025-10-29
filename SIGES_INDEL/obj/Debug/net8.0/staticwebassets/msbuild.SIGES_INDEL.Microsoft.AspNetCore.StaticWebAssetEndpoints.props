@@ -72,6 +72,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vmhuabezpl"},{"Name":"integrity","Value":"sha256-x6p9757C/kV\u002BsLXwwGRv\u002BnekXDqehXdHlzwJaWh41cs="},{"Name":"label","Value":"_content/SIGES_INDEL/images/default-avatar.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1780"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022x6p9757C/kV\u002BsLXwwGRv\u002BnekXDqehXdHlzwJaWh41cs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 21 Oct 2025 05:55:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIGES_INDEL/images/estudiante.nefndeiys5.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\estudiante.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nefndeiys5"},{"Name":"integrity","Value":"sha256-QY1pgis8wnfJ\u002BFelytDSacAiGlsQbX/h83YWVX753Yk="},{"Name":"label","Value":"_content/SIGES_INDEL/images/estudiante.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1369709"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022QY1pgis8wnfJ\u002BFelytDSacAiGlsQbX/h83YWVX753Yk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Oct 2025 04:38:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIGES_INDEL/images/estudiante.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\estudiante.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QY1pgis8wnfJ\u002BFelytDSacAiGlsQbX/h83YWVX753Yk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1369709"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022QY1pgis8wnfJ\u002BFelytDSacAiGlsQbX/h83YWVX753Yk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Oct 2025 04:38:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SIGES_INDEL/images/fondo.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
