@@ -31,11 +31,6 @@ namespace SIGES_INDEL.Models
 		[Display(Name = "Fecha de Nacimiento")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
 		public DateOnly FechaNacimiento { get; set; }
-		
-		[Display(Name = "Edad")]
-		[Required(ErrorMessage = "El campo {0} es obligatorio")]
-		[Range(14,23,ErrorMessage ="La edad debe de ser entre 14 y 23 años")]
-		public int Edad { get; set; }
 
 		[Display(Name ="Numero Telefonico")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]

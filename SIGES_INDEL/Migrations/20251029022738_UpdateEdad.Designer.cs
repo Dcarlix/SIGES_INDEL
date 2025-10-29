@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SIGES_INDEL.Datos;
 
@@ -11,9 +12,11 @@ using SIGES_INDEL.Datos;
 namespace SIGES_INDEL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251029022738_UpdateEdad")]
+    partial class UpdateEdad
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -471,7 +474,7 @@ namespace SIGES_INDEL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("GradosId")
+                    b.Property<int>("GradosId")
                         .HasColumnType("int");
 
                     b.Property<byte[]>("ImagenDocente")
@@ -489,8 +492,7 @@ namespace SIGES_INDEL.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("GradosId")
-                        .IsUnique()
-                        .HasFilter("[GradosId] IS NOT NULL");
+                        .IsUnique();
 
                     b.ToTable("TDocentes");
                 });
@@ -816,7 +818,9 @@ namespace SIGES_INDEL.Migrations
                 {
                     b.HasOne("SIGES_INDEL.Models.Complementos.Grados", "Grados")
                         .WithOne("Docente")
-                        .HasForeignKey("SIGES_INDEL.Models.Docente", "GradosId");
+                        .HasForeignKey("SIGES_INDEL.Models.Docente", "GradosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Grados");
                 });

@@ -8,7 +8,7 @@ namespace SIGES_INDEL.Models.Complementos
 		[Display(Name = "Codigo de Grado")]
 		public int Id { get; set; }
 
-		[Display(Name = "Grado")]
+		[Display(Name = "Especialidad")]
 		[Required(ErrorMessage = "El campo {0} es obligatorio")]
 		public string Grado { get; set; }
 

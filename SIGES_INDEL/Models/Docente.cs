@@ -26,9 +26,9 @@ namespace SIGES_INDEL.Models
 		public IFormFile ImagenDocenteArchivo { get; set; }
 
 		//Relacion con tabla Grado Coordinacion
-		[Display(Name = "Grado que Coordina")]
-		public int GradosId { get; set; }
-		[Display(Name = "Grado que Coordina")]
+		[Display(Name = "Grado que Coordina * Opcional")]
+		public int? GradosId { get; set; }
+		[Display(Name = "Grado que Coordina * Opcional")]
 		public Grados Grados { get; set; }
 
 	}

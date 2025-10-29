@@ -56,17 +56,13 @@
                                 <input asp-for="NombreCompleto" class="form-control" placeholder="Escriba el nombre completo" />
                                 <span asp-validation-for="NombreCompleto" class="text-danger"></span>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <label asp-for="FechaNacimiento" class="control-label"></label>
                                 <input asp-for="FechaNacimiento" type="date" class="form-control" placeholder="Fecha de Nacimiento" />
                                 <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
                             </div>
-                            <div class="col-md-4">
-                                <label asp-for="Edad" class="control-label"></label>
-                                <input asp-for="Edad" type="number" class="form-control" placeholder="Digite edad" />
-                                <span asp-validation-for="Edad" class="text-danger"></span>
-                            </div>
-                            <div class="col-md-4">
+
+                            <div class="col-md-6">
                                 <label asp-for="GeneroId" class="control-label"></label>
                                 <select asp-for="GeneroId" class="form-control">
                                     <option selected value="">Genero</option>

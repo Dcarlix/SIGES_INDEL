@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PulzZ9gnSuc9qavDWT/o6OxMIGz/gnmJ4EAcklXioJY=",
+  "Hash": "8nqEwnuAVlF9OxdpUEK/VIMGpBC+NGvGmJFMJsyoMzQ=",
   "Source": "SIGES_INDEL",
   "BasePath": "_content/SIGES_INDEL",
   "Mode": "Default",
@@ -101,6 +101,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\carlos.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/carlos#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4slgjfo4td",
+      "Integrity": "ROGV1CrWVuoKtL/KKAoaZ1LArRrAFqL8OXlN7ZsG3r0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carlos.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\control.jpg",
       "SourceId": "SIGES_INDEL",
       "SourceType": "Discovered",
@@ -120,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\control.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\davi.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/davi#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zyucq62bar",
+      "Integrity": "yzk0MzC9AlQk07tOzKh+RpcGeDupY7utEf90walsau0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\davi.jpeg"
     },
     {
       "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\default-avatar.png",
@@ -162,6 +204,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\fondo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\hugo.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/hugo#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ex389lzj9p",
+      "Integrity": "Hi25mnaGnvG5Ts5O0fDtnY83qHjBawu6joNgiPQwUdQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hugo.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\joe.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/joe#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2aedhga2h5",
+      "Integrity": "dmXwhunWAKa2NnIPRwFelFxsFyaC3GizRMzAN/mnxv0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\joe.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\loucel.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/loucel#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d0p28fkj6t",
+      "Integrity": "43DrhR3gak/uPNBdoW/yLVb2OSl17mQaYPSnxjeicbM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\loucel.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\pablito.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/pablito#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wlp9utf9yv",
+      "Integrity": "HHQz/B41ee3UNRt/U0qLrjytfoio+1TnRkepRkm38fY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pablito.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\renderos.jpeg",
+      "SourceId": "SIGES_INDEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\",
+      "BasePath": "_content/SIGES_INDEL",
+      "RelativePath": "images/renderos#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "30fh2xrli6",
+      "Integrity": "M7zqDUykI/Q/D69AnQiRQ+dvOl23gAd+9aQx+0R/9xM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\renderos.jpeg"
     },
     {
       "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\js\\site.js",
@@ -1548,6 +1695,88 @@
       ]
     },
     {
+      "Route": "images/carlos.4slgjfo4td.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\carlos.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ROGV1CrWVuoKtL/KKAoaZ1LArRrAFqL8OXlN7ZsG3r0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:14:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4slgjfo4td"
+        },
+        {
+          "Name": "label",
+          "Value": "images/carlos.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ROGV1CrWVuoKtL/KKAoaZ1LArRrAFqL8OXlN7ZsG3r0="
+        }
+      ]
+    },
+    {
+      "Route": "images/carlos.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\carlos.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ROGV1CrWVuoKtL/KKAoaZ1LArRrAFqL8OXlN7ZsG3r0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:14:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ROGV1CrWVuoKtL/KKAoaZ1LArRrAFqL8OXlN7ZsG3r0="
+        }
+      ]
+    },
+    {
       "Route": "images/control.3lksuoh14r.jpg",
       "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\control.jpg",
       "Selectors": [],
@@ -1626,6 +1855,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-N+WiKJpXwUNO06UIFdTY57bVAMnYF4Y4eCdRnymxwRo="
+        }
+      ]
+    },
+    {
+      "Route": "images/davi.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\davi.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yzk0MzC9AlQk07tOzKh+RpcGeDupY7utEf90walsau0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yzk0MzC9AlQk07tOzKh+RpcGeDupY7utEf90walsau0="
+        }
+      ]
+    },
+    {
+      "Route": "images/davi.zyucq62bar.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\davi.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yzk0MzC9AlQk07tOzKh+RpcGeDupY7utEf90walsau0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zyucq62bar"
+        },
+        {
+          "Name": "label",
+          "Value": "images/davi.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yzk0MzC9AlQk07tOzKh+RpcGeDupY7utEf90walsau0="
         }
       ]
     },
@@ -1790,6 +2101,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-IUZKF11aBBDEn1eGegQkPfT/HWqJjUPHQJ0F84UYGsM="
+        }
+      ]
+    },
+    {
+      "Route": "images/hugo.ex389lzj9p.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\hugo.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106550"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hi25mnaGnvG5Ts5O0fDtnY83qHjBawu6joNgiPQwUdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:47:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex389lzj9p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hugo.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hi25mnaGnvG5Ts5O0fDtnY83qHjBawu6joNgiPQwUdQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/hugo.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\hugo.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106550"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hi25mnaGnvG5Ts5O0fDtnY83qHjBawu6joNgiPQwUdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:47:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hi25mnaGnvG5Ts5O0fDtnY83qHjBawu6joNgiPQwUdQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/joe.2aedhga2h5.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\joe.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dmXwhunWAKa2NnIPRwFelFxsFyaC3GizRMzAN/mnxv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:13:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2aedhga2h5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/joe.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dmXwhunWAKa2NnIPRwFelFxsFyaC3GizRMzAN/mnxv0="
+        }
+      ]
+    },
+    {
+      "Route": "images/joe.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\joe.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dmXwhunWAKa2NnIPRwFelFxsFyaC3GizRMzAN/mnxv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:13:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dmXwhunWAKa2NnIPRwFelFxsFyaC3GizRMzAN/mnxv0="
+        }
+      ]
+    },
+    {
+      "Route": "images/loucel.d0p28fkj6t.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\loucel.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"43DrhR3gak/uPNBdoW/yLVb2OSl17mQaYPSnxjeicbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:12:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d0p28fkj6t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/loucel.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-43DrhR3gak/uPNBdoW/yLVb2OSl17mQaYPSnxjeicbM="
+        }
+      ]
+    },
+    {
+      "Route": "images/loucel.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\loucel.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"43DrhR3gak/uPNBdoW/yLVb2OSl17mQaYPSnxjeicbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:12:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-43DrhR3gak/uPNBdoW/yLVb2OSl17mQaYPSnxjeicbM="
+        }
+      ]
+    },
+    {
+      "Route": "images/pablito.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\pablito.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HHQz/B41ee3UNRt/U0qLrjytfoio+1TnRkepRkm38fY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 03:48:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HHQz/B41ee3UNRt/U0qLrjytfoio+1TnRkepRkm38fY="
+        }
+      ]
+    },
+    {
+      "Route": "images/pablito.wlp9utf9yv.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\pablito.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HHQz/B41ee3UNRt/U0qLrjytfoio+1TnRkepRkm38fY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 03:48:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wlp9utf9yv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pablito.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HHQz/B41ee3UNRt/U0qLrjytfoio+1TnRkepRkm38fY="
+        }
+      ]
+    },
+    {
+      "Route": "images/renderos.30fh2xrli6.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\renderos.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71601"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M7zqDUykI/Q/D69AnQiRQ+dvOl23gAd+9aQx+0R/9xM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:13:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "30fh2xrli6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/renderos.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M7zqDUykI/Q/D69AnQiRQ+dvOl23gAd+9aQx+0R/9xM="
+        }
+      ]
+    },
+    {
+      "Route": "images/renderos.jpeg",
+      "AssetFile": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\renderos.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71601"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M7zqDUykI/Q/D69AnQiRQ+dvOl23gAd+9aQx+0R/9xM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 02:13:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M7zqDUykI/Q/D69AnQiRQ+dvOl23gAd+9aQx+0R/9xM="
         }
       ]
     },
@@ -6572,7 +7293,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 23:33:45 GMT"
+          "Value": "Wed, 29 Oct 2025 02:47:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6609,7 +7330,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 23:33:45 GMT"
+          "Value": "Wed, 29 Oct 2025 02:47:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6654,7 +7375,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 23:33:45 GMT"
+          "Value": "Wed, 29 Oct 2025 02:47:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6699,7 +7420,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 23:33:45 GMT"
+          "Value": "Wed, 29 Oct 2025 02:47:13 GMT"
         },
         {
           "Name": "Cache-Control",

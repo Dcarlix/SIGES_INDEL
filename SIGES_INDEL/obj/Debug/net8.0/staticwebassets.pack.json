@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\carlos.jpeg",
+      "PackagePath": "staticwebassets\\images\\carlos.jpeg"
+    },
+    {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\control.jpg",
       "PackagePath": "staticwebassets\\images\\control.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\davi.jpeg",
+      "PackagePath": "staticwebassets\\images\\davi.jpeg"
     },
     {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\default-avatar.png",
@@ -23,6 +31,26 @@
     {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\fondo.svg",
       "PackagePath": "staticwebassets\\images\\fondo.svg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\hugo.jpeg",
+      "PackagePath": "staticwebassets\\images\\hugo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\joe.jpeg",
+      "PackagePath": "staticwebassets\\images\\joe.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\loucel.jpeg",
+      "PackagePath": "staticwebassets\\images\\loucel.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\pablito.jpeg",
+      "PackagePath": "staticwebassets\\images\\pablito.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\images\\renderos.jpeg",
+      "PackagePath": "staticwebassets\\images\\renderos.jpeg"
     },
     {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\wwwroot\\js\\site.js",

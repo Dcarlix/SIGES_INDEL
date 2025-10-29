@@ -1,8 +1,15 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\carlos.jpeg
 wwwroot\images\control.jpg
+wwwroot\images\davi.jpeg
 wwwroot\images\default-avatar.png
 wwwroot\images\fondo.svg
+wwwroot\images\hugo.jpeg
+wwwroot\images\joe.jpeg
+wwwroot\images\loucel.jpeg
+wwwroot\images\pablito.jpeg
+wwwroot\images\renderos.jpeg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

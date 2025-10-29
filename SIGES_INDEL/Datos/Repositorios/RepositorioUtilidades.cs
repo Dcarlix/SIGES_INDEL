@@ -44,7 +44,14 @@ namespace SIGES_INDEL.Datos.Repositorios
 
 		public async Task<IEnumerable> ListarGrados()
 		{
-			return await ContextoDatos.TGrados.ToListAsync();
+			var gradosConCoordinador = await ContextoDatos.TDocentes
+				.Where(d => d.GradosId != null)
+				.Select(d => d.GradosId)
+				.ToListAsync();
+
+			return await ContextoDatos.TGrados
+				.Where(g => !gradosConCoordinador.Contains(g.Id))
+				.ToListAsync();
 		}
 
 		public async Task<IEnumerable> ListarMeritos()

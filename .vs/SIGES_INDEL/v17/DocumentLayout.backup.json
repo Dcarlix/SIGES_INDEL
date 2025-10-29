@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\estudiantes\\borrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\estudiantes\\borrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\models\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\models\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|solutionrelative:siges_indel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93FE6DA6-F72D-4197-8A0F-115913231E59}|SIGES_INDEL\\SIGES_INDEL.csproj|c:\\users\\mineducyt\\desktop\\tercerosoft\\cafe_2025\\siges_indel\\siges_indel\\views\\estudiantes\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,27 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Borrar.cshtml",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Borrar.cshtml",
-              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Estudiantes\\Borrar.cshtml",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Borrar.cshtml",
-              "RelativeToolTip": "SIGES_INDEL\\Views\\Estudiantes\\Borrar.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T05:45:15.876Z",
+              "Title": "Docente.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Docente.cs",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Models\\Docente.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Models\\Docente.cs",
+              "RelativeToolTip": "SIGES_INDEL\\Models\\Docente.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:57:23.285Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T03:49:23.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Detalle.cshtml",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
               "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
               "RelativeToolTip": "SIGES_INDEL\\Views\\Estudiantes\\Detalle.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACgAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T05:45:12.284Z",
+              "WhenOpened": "2025-10-29T02:53:54.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\TerceroSoft\\Cafe_2025\\SIGES_INDEL\\SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "SIGES_INDEL\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T02:53:38.837Z",
               "EditorCaption": ""
             }
           ]

@@ -24,7 +24,8 @@
                             </div>
                             <div class="col-md-6">
                                 <label asp-for="FechaMatricula" class="control-label"></label>
-                                <input asp-for="FechaMatricula" class="form-control" value="@Model.FechaMatricula.Year" readonly disabled />
+                                <input asp-for="FechaMatricula" type="hidden" class="form-control"/>
+                                <input value="@Model.FechaMatricula.Year" class="form-control" readonly />
                             </div>
                             <div class="col-md-6">
                                 <label asp-for="EstadoId" class="control-label"></label>
