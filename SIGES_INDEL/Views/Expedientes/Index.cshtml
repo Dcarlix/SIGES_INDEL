@@ -6,7 +6,7 @@
 
 <h1 class="text-center mb-4">Expediente de @Model.NombreCompleto</h1>
 
-<div class="card shadow border-2 border-info rounded-3 mb-4">
+<div class="card shadow border-2 border-info rounded-3 mb-4 glass">
     <div class="card-header bg-info">
         <h4 class="text-dark text-center">Datos Generales</h4>
     </div>
@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<div class="card shadow border-2 border-info rounded-3 mb-4">
+<div class="card shadow border-2 border-info rounded-3 mb-4 glass">
     <div class="bg-info">
         <div class="card-title text-center text-dark"><h3>Agregar Al Expediente</h3></div>
     </div>
@@ -54,11 +54,11 @@
         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row">
-                    <div class="col-md-4 mb-4 text-center">
-                        @if (Model.MeritosAsignados?.Any() == true)
+                    @if (Model.MeritosAsignados?.Any() == true)
+                    {
+                        @foreach (var merito in Model.MeritosAsignados)
                         {
-                            @foreach (var merito in Model.MeritosAsignados)
-                            {
+                            <div class="col-4 mb-4 text-center">
                                 <div class="card shadow border-2 border-success">
                                     <div class="card-header bg-success text-white">Méritos</div>
                                     <div class="card-body">
@@ -73,13 +73,14 @@
                                             </div>
                                     </div>
                                 </div>
-                            }
+                            </div>
+
                         }
-                        else
-                        {
-                            <p class="fs-bold"><strong>No se han registrado méritos.</strong></p>
-                        }
-                    </div>
+                    }
+                    else
+                    {
+                        <p class="fs-bold"><strong>No se han registrado méritos.</strong></p>
+                    }
                 </div>
             </div>
         </div>
@@ -93,11 +94,11 @@
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row">
-                    <div class="col-md-4 mb-4 text-center">
-                        @if (Model.DemeritosAsignados?.Any() == true)
+                    @if (Model.DemeritosAsignados?.Any() == true)
+                    {
+                        @foreach (var demerito in Model.DemeritosAsignados)
                         {
-                            @foreach (var demerito in Model.DemeritosAsignados)
-                            {
+                            <div class="col-4 mb-4 text-center">
                                 <div class="card shadow border-2 border-danger">
                                     <div class="card-header bg-danger text-white">Deméritos</div>
                                     <div class="card-body">
@@ -112,14 +113,15 @@
                                             </div>
                                     </div>
                                 </div>
-                            }
-                        }
-                        else
-                        {
-                            <p class="fs-bold"><strong>No se han registrado Demeritos.</strong></p>
+                            </div>
 
                         }
-                    </div>
+                    }
+                    else
+                    {
+                        <p class="fs-bold"><strong>No se han registrado Demeritos.</strong></p>
+
+                    }
                 </div>
             </div>
         </div>
@@ -133,11 +135,11 @@
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row">
-                    <div class="col-md-6 mb-4 text-center">
-                        @if (Model.ActasAsignadas?.Any() == true)
+                    @if (Model.ActasAsignadas?.Any() == true)
+                    {
+                        @foreach (var actas in Model.ActasAsignadas)
                         {
-                            @foreach (var actas in Model.ActasAsignadas)
-                            {
+                            <div class="col-6 mb-4 text-center">
                                 <div class="card shadow border-2 border-warning">
                                     <div class="card-header bg-warning text-white">Acta</div>
                                     <div class="card-body">
@@ -152,14 +154,15 @@
                                             </div>
                                     </div>
                                 </div>
-                            }
-                        }
-                        else
-                        {
-                            <p class="fs-bold"><strong>No se han registrado Actas.</strong></p>
+                            </div>
 
                         }
-                    </div>
+                    }
+                    else
+                    {
+                        <p class="fs-bold"><strong>No se han registrado Actas.</strong></p>
+
+                    }
                 </div>
             </div>
         </div>
@@ -173,11 +176,11 @@
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row">
-                    <div class="col-md-6 mb-4 text-center">
-                        @if (Model.FichasAsignadas?.Any() == true)
+                    @if (Model.FichasAsignadas?.Any() == true)
+                    {
+                        @foreach (var fichas in Model.FichasAsignadas)
                         {
-                            @foreach (var fichas in Model.FichasAsignadas)
-                            {
+                            <div class="col-6 mb-4 text-center">
                                 <div class="card shadow border-2 border-info">
                                     <div class="card-header bg-info text-white">Ficha</div>
                                     <div class="card-body">
@@ -192,14 +195,15 @@
                                             </div>
                                     </div>
                                 </div>
-                            }
-                        }
-                        else
-                        {
-                            <p class="fs-bold"><strong>No se han registrado Fichas.</strong></p>
+                            </div>
 
                         }
-                    </div>
+                    }
+                    else
+                    {
+                        <p class="fs-bold"><strong>No se han registrado Fichas.</strong></p>
+
+                    }
                 </div>
             </div>
         </div>

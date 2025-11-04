@@ -11,11 +11,11 @@
     <div class="col">
         <form asp-action="Index" method="get">
             <div class="form-actions no-color">
-                <div class="card shadow my-3 bg-light border-2 border-info rounded-3 p-2">
+                <div class="card shadow my-3 glass border-2 border-info rounded-3 p-2">
                     <div class="container">
                         <div class="row">
                             <div class="col-3 fs-4"><label for="Buscar">Buscar segun NIP</label></div>
-                            <div class="col-3"><input name="Buscar" value="@ViewData["Buscar"]" class="form-control"/></div>
+                            <div class="col-3"><input name="Buscar" value="@ViewData["Buscar"]" class="form-control" placeholder="Coloca el NIP"/></div>
                             <div class="col-3"><input type="submit" value="Buscar" class="btn btn-success" /></div>
                             <div class="col-3"><a asp-action="Index" class="btn btn-secondary">Lista completa <i class="bi bi-person-lines-fill"></i></a></div>
                         </div>
@@ -31,8 +31,8 @@
     {
         @foreach (var docente in Model)
         {
-            <div class="col-4 text-center">
-                <div class="card shadow my-3 bg-light border-2 border-info rounded-3">
+            <div class="col-4 text-center float">
+                <div class="card shadow my-3 glass border-2 border-info rounded-3">
                     <div class="card-header bg-info">
                         <div class="card-title">
                             <p class="fw-bold fs-5">NIP - @Html.DisplayFor(t => docente.NIP)</p>

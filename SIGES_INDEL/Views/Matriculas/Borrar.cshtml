@@ -7,9 +7,9 @@
 @{
     ViewData["Title"] = "Eliminar Matricula";
 }
-<form asp-action="Detalle" onsubmit="confirmarEliminacion(event)">
+<form asp-action="Borrar" onsubmit="confirmarEliminacion(event)">
     <div class="container py-4">
-        <div class="card shadow border-2 border-danger rounded-3 mb-4">
+        <div class="card shadow border-2 border-danger rounded-3 mb-4 glass">
             <div class="card-header bg-danger">
                 <h3 class="text-center mb-4 fw-bold">Matriculacion de @estudiante.NombreCompleto</h3>
             </div>

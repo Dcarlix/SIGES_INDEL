@@ -9,7 +9,7 @@
 }
 <form asp-action="Editar">
     <div class="container py-4">
-        <div class="card shadow border-2 border-primary rounded-3 mb-4">
+        <div class="card shadow border-2 border-primary rounded-3 mb-4 glass">
             <div class="card-header bg-primary">
                 <h3 class="text-center mb-4 fw-bold">Matriculacion de @estudiante.NombreCompleto</h3>
             </div>
@@ -24,7 +24,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label asp-for="FechaMatricula" class="control-label"></label>
-                                <input asp-for="FechaMatricula" type="hidden" class="form-control" />
+                                <input asp-for="FechaMatricula" type="hidden" class="form-control" value="@Model.FechaMatricula" />
                                 <input value="@Model.FechaMatricula.Year" class="form-control" readonly />
                             </div>
                             <div class="col-md-6">

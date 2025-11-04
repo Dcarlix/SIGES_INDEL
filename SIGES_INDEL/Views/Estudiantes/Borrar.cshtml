@@ -18,7 +18,7 @@
 <form asp-action="Borrar" enctype="multipart/form-data" onsubmit="confirmarEliminacion(event)">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Borrar el alumno @Model.NombreCompleto</h3>
-        <div class="card shadow border-2 border-danger rounded-3 mb-4">
+        <div class="card shadow border-2 border-danger rounded-3 mb-4 glass">
             <div class="card-header bg-danger">
                 <h3 class="text-center mb-4 fw-bold">Datos Personales</h3>
             </div>
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="card shadow border-2 border-danger rounded-3 mb-4">
+        <div class="card shadow border-2 border-danger rounded-3 mb-4 glass">
             <div class="card-header bg-danger">
                 <h5 class="card-title mb-3 fw-semibold">Representante</h5>
             </div>
@@ -163,7 +163,7 @@
             </div>
         </div>
 
-        <div class="card shadow border-2 border-danger rounded-3 mb-4">
+        <div class="card shadow border-2 border-danger rounded-3 mb-4 glass">
             <div class="card-header bg-danger">
                 <h5 class="card-title mb-3 fw-semibold">Datos de Matricula</h5>
             </div>
@@ -190,7 +190,14 @@
                         </div>
                         <div class="col-md-6">
                             <label class="control-label">Coordinador:</label>
-                            <input class="form-control" value="@ultimaMatricula.Grados.Docente.NombreCompleto" readonly disabled />
+                            @if (@ultimaMatricula.Grados.Docente != null)
+                            {
+                                <input class="form-control" value="@ultimaMatricula.Grados.Docente.NombreCompleto" readonly disabled />
+                            }
+                            else
+                            {
+                                <input class="form-control" value="No tiene docente coordinador" readonly disabled />
+                            }
                         </div>
                     }
                     else

@@ -21,7 +21,7 @@ namespace SIGES_INDEL.Datos.Repositorios
 
 		public async Task<Docente> Buscar(int? id)
 		{
-			return docente = await ContextoDatos.TDocentes.Include(e => e.Grados).FirstOrDefaultAsync(e => e.Id == id);
+			return docente = await ContextoDatos.TDocentes.Include(e => e.Grados).Include(t => t.User).FirstOrDefaultAsync(e => e.Id == id);
 		}
 		public async Task Borrar(Docente docente)
 		{

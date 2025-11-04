@@ -12,6 +12,7 @@ namespace SIGES_INDEL.Datos.Interfaces
 		public Task<IEnumerable> ListarEstadoCivil();
 		public Task<IEnumerable> ListarEtnia();
 		public Task<IEnumerable> ListarGrados();
+		public Task<IEnumerable> ListarGradosCompletos();
 		public Task<IEnumerable> ListarMeritos();
 		public Task<IEnumerable> ListarNacionalidades();
 		public Task<IEnumerable> ListarParentesco();

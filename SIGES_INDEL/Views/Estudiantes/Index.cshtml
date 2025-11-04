@@ -8,11 +8,11 @@
     <div class="col">
         <form asp-action="Index" method="get">
             <div class="form-actions no-color">
-                <div class="card shadow my-3 bg-light border-2 border-info rounded-3 p-2">
+                <div class="card shadow my-3 border-2 border-info rounded-3 p-2 glass">
                     <div class="container">
                         <div class="row">
                             <div class="col-3 fs-4"><label for="Buscar">Buscar segun NIE</label></div>
-                            <div class="col-3"><input name="Buscar" value="@ViewData["Buscar"]" class="form-control" /></div>
+                            <div class="col-3"><input name="Buscar" value="@ViewData["Buscar"]" class="form-control" placeholder="Coloca el NIE" /></div>
                             <div class="col-3"><input type="submit" value="Buscar" class="btn btn-success" /></div>
                             <div class="col-3"><a asp-action="Index" class="btn btn-secondary">Lista completa <i class="bi bi-person-lines-fill"></i></a></div>
                         </div>
@@ -28,8 +28,8 @@
     {
         @foreach (var estudiante in Model)
         {
-            <div class="col-6">
-                <div class="card shadow p-4 mb-4 bg-light border-2 border-info rounded-3" style="max-width: 900px; margin: auto;">
+            <div class="col-6 float">
+                <div class="card shadow p-4 mb-4 glass border-2 border-info rounded-3" style="max-width: 900px; margin: auto;">
                     <div class="card-header bg-info text-white text-center fw-bold">
                         NIE: @Html.DisplayFor(t => estudiante.NIE)
                     </div>

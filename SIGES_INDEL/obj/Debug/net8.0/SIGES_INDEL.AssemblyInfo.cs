@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIGES_INDEL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c61a0836f39850cbbba83e2c2cdc0e3fec5397f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a309867be9fbff55ae5df6fa81ab650d18a9d4fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIGES_INDEL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIGES_INDEL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

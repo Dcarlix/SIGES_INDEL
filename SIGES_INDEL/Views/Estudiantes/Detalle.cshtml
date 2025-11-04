@@ -18,7 +18,7 @@
 <form asp-action="Detalle" enctype="multipart/form-data">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Informacion de @Model.NombreCompleto</h3>
-        <div class="card shadow border-2 border-info rounded-3 mb-4">
+        <div class="card shadow border-2 border-info rounded-3 mb-4 glass">
             <div class="card-header bg-info">
                 <h3 class="text-center mb-4 fw-bold">Datos Personales</h3>
             </div>
@@ -29,16 +29,16 @@
                         @if (Model.ImagenEstudiante != null)
                         {
                             <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImagenEstudiante)"
-                                 alt="Imagen de @Model.NombreCompleto"
-                                 class="img-thumbnail m-2"
-                                 style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                            alt="Imagen de @Model.NombreCompleto"
+                            class="img-thumbnail m-2"
+                            style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
                         }
                         else
                         {
                             <img src="~/images/default-avatar.png"
-                                 alt="Previsualización"
-                                 class="img-thumbnail m-2"
-                                 style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                            alt="Previsualización"
+                            class="img-thumbnail m-2"
+                            style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
                         }
                     </div>
                     <div class="col-md-8">
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="card shadow border-2 border-info rounded-3 mb-4">
+        <div class="card shadow border-2 border-info rounded-3 mb-4 glass">
             <div class="card-header bg-info">
                 <h5 class="card-title mb-3 fw-semibold">Representante</h5>
             </div>
@@ -163,7 +163,7 @@
             </div>
         </div>
 
-        <div class="card shadow border-2 border-success rounded-3 mb-4">
+        <div class="card shadow border-2 border-success rounded-3 mb-4 glass">
             <div class="card-header bg-success">
                 <h5 class="card-title mb-3 fw-semibold">Datos de Matricula</h5>
             </div>
@@ -190,7 +190,14 @@
                         </div>
                         <div class="col-md-6">
                             <label class="control-label">Coordinador:</label>
-                            <input class="form-control" value="@ultimaMatricula.Grados.Docente.NombreCompleto" readonly disabled />
+                            @if(@ultimaMatricula.Grados.Docente != null)
+                            {
+                                <input class="form-control" value="@ultimaMatricula.Grados.Docente.NombreCompleto" readonly disabled />
+                            }
+                            else
+                            {
+                                <input class="form-control" value="No tiene docente coordinador" readonly disabled />
+                            }
                         </div>
                     }
                     else

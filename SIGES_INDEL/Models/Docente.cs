@@ -31,5 +31,7 @@ namespace SIGES_INDEL.Models
 		[Display(Name = "Grado que Coordina * Opcional")]
 		public Grados Grados { get; set; }
 
+		[Display(Name = "Cuenta del Docente")]
+		public ApplicationUser? User { get; set; }
 	}
 }

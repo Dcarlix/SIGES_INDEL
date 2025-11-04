@@ -805,9 +805,9 @@ namespace SIGES_INDEL.Migrations
             modelBuilder.Entity("SIGES_INDEL.Models.ApplicationUser", b =>
                 {
                     b.HasOne("SIGES_INDEL.Models.Docente", "Docente")
-                        .WithOne()
+                        .WithOne("User")
                         .HasForeignKey("SIGES_INDEL.Models.ApplicationUser", "DocenteId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Docente");
                 });
@@ -994,6 +994,11 @@ namespace SIGES_INDEL.Migrations
             modelBuilder.Entity("SIGES_INDEL.Models.Complementos.Grados", b =>
                 {
                     b.Navigation("Docente");
+                });
+
+            modelBuilder.Entity("SIGES_INDEL.Models.Docente", b =>
+                {
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("SIGES_INDEL.Models.Estudiante", b =>

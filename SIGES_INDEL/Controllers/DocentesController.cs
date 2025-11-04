@@ -91,7 +91,7 @@ namespace SIGES_INDEL.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Detalle(int? id)
 		{
-			ViewBag.grados = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grados = await _IrepositorioUtilidades.ListarGradosCompletos();
 			if (id == null)
 			{
 				return NotFound();
@@ -105,7 +105,7 @@ namespace SIGES_INDEL.Controllers
 		}
 		public async Task<IActionResult> Borrar(int? id)
 		{
-			ViewBag.grados = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grados = await _IrepositorioUtilidades.ListarGradosCompletos();
 			if (id == null)
 			{
 				return NotFound();

@@ -22,7 +22,12 @@ namespace SIGES_INDEL.Controllers
 		[AllowAnonymous]
 		public IActionResult Registro()
 		{
-			ViewData["Docentes"] = _context.TDocentes.ToList();
+			var docentesConCuenta = _context.Users
+					   .Where(u => u.DocenteId != null)
+					   .Select(u => u.DocenteId)
+					   .ToList();
+
+			ViewData["Docentes"] = _context.TDocentes.Where(d => !docentesConCuenta.Contains(d.Id)).ToList();
 			return View();
 		}
 
@@ -31,6 +36,17 @@ namespace SIGES_INDEL.Controllers
 		public async Task<IActionResult> Registro(RegistroViewModel modelo)
 		{
 			ViewData["Docentes"] = _context.TDocentes.ToList();
+
+			var docenteTieneCuenta = _context.Users.Any(u => u.DocenteId == modelo.DocenteId);
+
+			if (docenteTieneCuenta)
+			{
+				ModelState.AddModelError("DocenteId", "Este docente ya tiene una cuenta registrada.");
+				ViewData["Docentes"] = _context.TDocentes
+					.Where(d => !_context.Users.Select(u => u.DocenteId).Contains(d.Id))
+					.ToList();
+				return View(modelo);
+			}
 
 			if (!ModelState.IsValid)
 			{

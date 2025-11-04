@@ -28,7 +28,7 @@ namespace SIGES_INDEL.Controllers
 		{
 			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(id);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGradosCompletos();
 			return View();
 		}
 
@@ -45,9 +45,10 @@ namespace SIGES_INDEL.Controllers
 				TempData["tipo"] = "success";
 				return RedirectToAction(nameof(Index));
 			}
+			Console.WriteLine("algo salio mal");
 			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matriculas.EstudianteId);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGradosCompletos();
 
 			return View(matriculas);
 		}
@@ -64,7 +65,7 @@ namespace SIGES_INDEL.Controllers
 
 			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matricula.EstudianteId);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGradosCompletos();
 
 			return View(matricula);
 		}
@@ -82,7 +83,7 @@ namespace SIGES_INDEL.Controllers
 
 			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matriculas.EstudianteId);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGradosCompletos();
 
 			return View(matriculas);
 		}
@@ -97,7 +98,7 @@ namespace SIGES_INDEL.Controllers
 			}
 			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matriculas.EstudianteId);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGradosCompletos();
 			
 			return View(matriculas);
 		}
@@ -113,7 +114,7 @@ namespace SIGES_INDEL.Controllers
 			}
 			ViewBag.estudiante = await _IrepositorioUtilidades.ListarEstudiantes(matricula.EstudianteId);
 			ViewBag.estado = await _IrepositorioUtilidades.ListarEstado();
-			ViewBag.grado = await _IrepositorioUtilidades.ListarGrados();
+			ViewBag.grado = await _IrepositorioUtilidades.ListarGradosCompletos();
 
 			return View(matricula);
 		}

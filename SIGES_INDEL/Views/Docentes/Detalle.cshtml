@@ -8,23 +8,23 @@
 <form asp-action="Editar" enctype="multipart/form-data">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Datos de @Model.NombreCompleto</h3>
-        <div class="card shadow mb-4 bg-light border-2 border-info rounded-3">
+        <div class="card shadow mb-4 glass border-2 border-info rounded-3">
             <div class="card-body">
                 <div class="row">
                     <div class="col-3">
                         @if (Model.ImagenDocente != null)
                         {
                             <img id="previewImagen" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImagenDocente)"
-                                 alt="Imagen de @Model.NombreCompleto"
-                                 class="img-thumbnail m-2"
-                                 style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                            alt="Imagen de @Model.NombreCompleto"
+                            class="img-thumbnail m-2"
+                            style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
                         }
                         else
                         {
                             <img id="previewImagen" src="~/images/default-avatar.png"
-                                 alt="Previsualización"
-                                 class="img-thumbnail m-2"
-                                 style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
+                            alt="Previsualización"
+                            class="img-thumbnail m-2"
+                            style="max-width: 250px; height: 300px; object-fit: cover; border-radius: 10px;" />
                         }
                     </div>
 
@@ -50,7 +50,24 @@
                                 </select>
                             </div>
                         </div>
-
+                        @if(Model.User != null)
+                        {
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label asp-for="User" class="control-label"></label>
+                                    <input value="@Model.User.Email" class="form-control" disabled readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label asp-for="User" class="control-label"></label>
+                                    <input value="No tiene Cuenta Registrada" class="form-control" disabled readonly />
+                                </div>
+                            </div>
+                        }
                         <div class="d-flex justify-content-start gap-3">
                             <a class="btn btn-secondary mx-2" asp-controller="Docentes" asp-action="Index">Regresar</a>
                         </div>

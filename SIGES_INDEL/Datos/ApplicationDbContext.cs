@@ -50,9 +50,9 @@ namespace SIGES_INDEL.Datos
 			// Configuración de relación 1 a 1 entre ApplicationUser y Docente
 			builder.Entity<ApplicationUser>()
 				.HasOne(u => u.Docente)
-				.WithOne()
+				.WithOne(d => d.User)
 				.HasForeignKey<ApplicationUser>(u => u.DocenteId)
-				.OnDelete(DeleteBehavior.Restrict);
+				.OnDelete(DeleteBehavior.Cascade);
 			//Siembra de Datos
 			builder.Entity<Discapacidades>().HasData(
 				new Discapacidades { Id = 1, Discapacidad = "No Posee" });

@@ -8,7 +8,7 @@
 <form asp-action="Editar" enctype="multipart/form-data">
     <div class="container py-4">
         <h3 class="text-center mb-4 fw-bold">Modifar Datos de Docente</h3>
-        <div class="card shadow mb-4 bg-light border-2 border-secondary rounded-3">
+        <div class="card shadow mb-4 glass border-2 border-secondary rounded-3">
             <div class="card-body">
                 <div class="row">
                     <div class="col-3">
@@ -55,6 +55,24 @@
                                 <span asp-validation-for="GradosId" class="text-danger"></span>
                             </div>
                         </div>
+                        @if (Model.User != null)
+                        {
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label asp-for="User" class="control-label"></label>
+                                    <input value="@Model.User.Email" class="form-control" disabled readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label asp-for="User" class="control-label"></label>
+                                    <input value="No tiene Cuenta Registrada" class="form-control" disabled readonly />
+                                </div>
+                            </div>
+                        }
 
                         <div class="d-flex justify-content-start gap-3">
                             <button type="submit" class="btn btn-success">Guardar Cambios</button>
