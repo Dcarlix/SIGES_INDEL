@@ -1,3 +1,16 @@
+:root {
+    --glass-bg: rgba(255,255,255,0.08); 
+    --glass-border: rgba(255,255,255,0.18); 
+    --glass-accent: rgba(255,255,255,0.25);
+    --glass-blur: 10px; 
+    --card-radius: 16px;
+    --card-padding: 0;
+    --shadow: 0 8px 24px rgba(2,6,23,0.55);
+    --text-color: #ffffff;
+}
+
+
+
 html {
   font-size: 14px;
 }
@@ -30,6 +43,33 @@ body {
 .fondo-footer {
     background-color: #EBEBEB;
 }
-.transition{
-    
+
+.float{
+    transition: all ease .3s;
 }
+
+.float:hover{
+    transform: translateY(-10px);
+}
+
+.glass {
+    background: var(--glass-bg);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--glass-border);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(var(--glass-blur)) saturate(120%);
+    transform-origin: center;
+    transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+    .glass::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.00) 30%);
+        mix-blend-mode: overlay;
+    }

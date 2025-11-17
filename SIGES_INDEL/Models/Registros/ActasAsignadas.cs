@@ -14,15 +14,15 @@ namespace SIGES_INDEL.Models.Registros
 		public DateOnly FechaRegistro { get; set; }
 
 		//Relacion con tabla Estudainte
-		[Display(Name = "NIE Del Alumno")]
+		[Display(Name = "Nombre del Alumno")]
 		public int EstudianteId { get; set; }
-		[Display(Name = "NIE Del Alumno")]
+		[Display(Name = "Nombre del Alumno")]
 		public Estudiante Estudiante { get; set; }
 
 		//Relacion con tabla Docente
-		[Display(Name = "NIP Del Docente")]
+		[Display(Name = "Docente que lo Asigna")]
 		public int DocenteId { get; set; }
-		[Display(Name = "NIP Del Docente")]
+		[Display(Name = "Docente que lo Asigna")]
 		public Docente Docente { get; set; }
 
 		[Display(Name = "Acta")]
